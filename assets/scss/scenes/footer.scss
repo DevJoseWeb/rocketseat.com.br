@@ -2,6 +2,42 @@
   @extend .container;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   height: 60px;
+  text-align: center;
+  border-top: 1px solid $grayDark;
+  font-size: 14px;
+  color: $light;
+
+  ul {
+    color: #666;
+    padding: 30px 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      padding: 0 10px;
+    }
+
+    a {
+      &:hover,
+      &:focus {
+        color: $black;
+      }
+    }
+  }
+
+  cite {
+    margin-top: 5px;
+    font-size: 11px;
+    font-style: normal;
+  }
+
+  .copyright {
+    padding: 20px 0;
+
+    a {
+      font-weight: bold;
+    }
+  }
 }

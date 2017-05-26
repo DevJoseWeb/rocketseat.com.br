@@ -1,7 +1,10 @@
 #form {
   @extend .article;
   @extend .container;
-  width: 860px;
+  width: 100%;
+  max-width: 860px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
   font-size: 24px;
   line-height: 1.6;
@@ -19,7 +22,8 @@
 
     input,
     button {
-      width: 600px;
+      width: 100%;
+      max-width: 600px;
       line-height: 60px;
     }
 
@@ -39,6 +43,7 @@
       padding: 0 20px;
       font-weight: bold;
       color: $white;
+      font-size: 22px;
       background-color: $orange;
       border-radius: 5px;
       border-bottom: 4px solid $orangeDark;

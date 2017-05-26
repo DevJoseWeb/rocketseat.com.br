@@ -1,7 +1,12 @@
 .container {
   display: block;
-  width: 980px;
+  max-width: 980px;
+  width: 100%;
   margin: 0 auto;
+
+  @media all and (max-width: 1000px) {
+    padding: 0 20px;
+  }
 }
 
 .article {

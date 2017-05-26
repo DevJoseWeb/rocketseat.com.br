@@ -5,29 +5,43 @@
   .wrap {
     display: flex;
     justify-content: space-around;
-  }
 
-  .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @media all and (max-width: 700px) {
+      flex-direction: column;
 
-    h3 {
-      font-size: 24px;
-      margin: 30px 0 20px 0;
+      .profile {
+        &:not(:first-child) {
+          margin-top: 40px;
+        }
+
+        h3 {
+          margin: 20px 0 10px 0;
+        }
+      }
     }
 
-    > span {
-      display: inline-block;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 5px solid $grayLight;
-      overflow: hidden;
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-      img {
-        width: 100%;
-        height: 100%;
+      h3 {
+        font-size: 24px;
+        margin: 30px 0 20px 0;
+      }
+
+      > span {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid $grayLight;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
   }
