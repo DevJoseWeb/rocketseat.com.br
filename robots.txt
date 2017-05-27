@@ -1,0 +1,7 @@
+User-agent: *
+
+Allow: /
+Disallow: /obrigado
+Disallow: /_index
+
+Sitemap: http://rocketseat.com.br/sitemap.xml
