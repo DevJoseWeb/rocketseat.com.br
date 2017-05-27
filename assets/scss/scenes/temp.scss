@@ -1,0 +1,17 @@
+.temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FBFBFB;
+
+  #main-header {
+    justify-content: center;
+    height: auto;
+
+    h1 {
+      img {
+        height: 80px;
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 30px;
   height: 60px;
   text-align: center;
   border-top: 1px solid $grayDark;
@@ -11,7 +12,7 @@
 
   ul {
     color: #666;
-    padding: 30px 0;
+    margin-bottom: 30px;
     list-style: none;
 
     li {
