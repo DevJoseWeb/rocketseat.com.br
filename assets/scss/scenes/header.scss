@@ -14,4 +14,23 @@
       margin-top: 10px;
     }
   }
+
+  #logo {
+    img:first-child {
+      margin-right: 9px;
+    }
+
+    img:last-child {
+      margin-top: -5px;
+    }
+
+    a {
+      display: flex;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
 }

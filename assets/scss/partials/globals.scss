@@ -35,6 +35,10 @@
     text-align: justify;
     line-height: 1.6;
 
+    @media all and (max-width: 1000px) {
+      padding: 0 20px;
+    }
+
     p:not(:first-child) {
       margin-top: 20px;
     }
