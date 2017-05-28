@@ -13,8 +13,28 @@
       width: 380px;
 
       img {
-        width: 100%;
+        &:first-child {
+          height: 70px;
+          animation: rocket 2s linear infinite alternate;
+        }
+
+        &:last-child {
+          width: 280px;
+          margin-left: 10px;
+        }
       }
     }
+  }
+}
+
+@keyframes rocket {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
   }
 }
