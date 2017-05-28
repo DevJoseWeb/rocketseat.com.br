@@ -29,12 +29,22 @@
 
 @keyframes rocket {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) translateY(0) translateZ(0);
   }
+
+  25% {
+    transform: rotate(3deg) translateY(5%) translateZ(0);
+  }
+
   50% {
-    transform: rotate(5deg);
+    transform: rotate(0deg) translateY(10%) translateZ(0);
   }
+
+  75% {
+    transform: rotate(-3deg) translateY(5%) translateZ(0);
+  }
+
   100% {
-    transform: rotate(-5deg);
+    transform: rotate(0deg) translateY(-10%) translateZ(0);
   }
 }
