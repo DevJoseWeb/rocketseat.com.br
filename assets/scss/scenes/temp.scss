@@ -15,7 +15,7 @@
       img {
         &:first-child {
           height: 70px;
-          animation: rocket 2s linear infinite alternate;
+          animation: rocket 4s linear infinite alternate;
         }
 
         &:last-child {
@@ -32,19 +32,31 @@
     transform: rotate(0deg) translateY(0) translateZ(0);
   }
 
-  25% {
-    transform: rotate(3deg) translateY(5%) translateZ(0);
+  14% {
+    transform: rotate(2deg) translateY(4%) translateZ(0);
   }
 
-  50% {
-    transform: rotate(0deg) translateY(10%) translateZ(0);
+  28% {
+    transform: rotate(0deg) translateY(8%) translateZ(0);
   }
 
-  75% {
-    transform: rotate(-3deg) translateY(5%) translateZ(0);
+  42% {
+    transform: rotate(-2deg) translateY(4%) translateZ(0);
+  }
+
+  56% {
+    transform: rotate(0deg) translateY(0) translateZ(0);
+  }
+
+  70% {
+    transform: rotate(2deg) translateY(-4%) translateZ(0);
+  }
+
+  84% {
+    transform: rotate(0deg) translateY(-8%) translateZ(0);
   }
 
   100% {
-    transform: rotate(0deg) translateY(-10%) translateZ(0);
+    transform: rotate(-2deg) translateY(-4%) translateZ(0);
   }
 }
