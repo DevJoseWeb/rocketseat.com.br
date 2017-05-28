@@ -48,6 +48,38 @@
       p {
         padding: 0 25px;
       }
+
+      .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+
+        > * {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          z-index: 3;
+
+          &:not(:first-child) {
+            margin-left: 5px;
+          }
+
+          img {
+            width: 60%;
+          }
+        }
+
+        .linkedin {
+          right: 0;
+          background-color: rgba(#0077b5, .7);
+        }
+
+        .github {
+          left: 0;
+          background-color: rgba(#4078C0, .7);
+        }
+      }
     }
   }
 }
