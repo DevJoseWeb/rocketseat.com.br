@@ -9,8 +9,11 @@
     height: auto;
 
     h1 {
+      max-width: calc(100% - 40px);
+      width: 380px;
+
       img {
-        height: 80px;
+        width: 100%;
       }
     }
   }
