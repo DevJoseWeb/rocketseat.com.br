@@ -37,6 +37,10 @@
       border: 1px solid $gray;
       border-radius: 5px;
 
+      &:first-of-type {
+        margin-top: 10px;
+      }
+
       &::placeholder {
         color: lighten($default, 30);
       }

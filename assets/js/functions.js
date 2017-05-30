@@ -1,25 +1,27 @@
-var dropdowns = document.getElementsByClassName('dropdown');
+$('.dropdown').on('click', function(event) {
+  var target = $(event.target);
 
-for (var i = 0; i < dropdowns.length; i++) {
-  dropdowns[i].addEventListener('click', function(event) {
-    var target = event.target;
+    target = (target.hasClass('dropdown')) ? target : target.closest('.dropdown');
 
-    target = (target.classList.contains('dropdown')) ? target : target.parentElement;
-
-    if (target.classList.contains('opened')) {
-      target.classList.remove('opened');
+    if (target.hasClass('opened')) {
+      target.removeClass('opened');
     } else {
-      target.classList.add('opened');
+      target.addClass('opened');
     }
+});
+
+var trigger = $('.action');
+var input  = $('input[name="data[name]"]');
+input = input.length ? input : $('input[name="data[email]"]');
+
+if (typeof trigger != 'undefined' && trigger.length && typeof input != 'undefined' && input.length) {
+  trigger.on('click', function(event) {
+    event.preventDefault();
+
+    input.focus();
+
+    $('html,body').animate({
+      scrollTop: input.offset().top
+    }, 'slow');
   });
 }
-
-var scroll = document.querySelector('.action');
-var input  = document.querySelector('input[name="data[name]"]');
-
-scroll.addEventListener('click', function(event) {
-  document.body.scrollTop = document.body.scrollHeight;
-  input.focus();
-
-  event.preventDefault();
-});
