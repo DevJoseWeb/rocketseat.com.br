@@ -17,11 +17,14 @@ input = input.length ? input : $('input[name="data[email]"]');
 if (typeof trigger != 'undefined' && trigger.length && typeof input != 'undefined' && input.length) {
   trigger.on('click', function(event) {
     event.preventDefault();
+    var delay = 500;
 
-    input.focus();
+    setTimeout(function() {
+      input.focus();
+    }, delay);
 
     $('html,body').animate({
       scrollTop: input.offset().top
-    }, 'slow');
+    }, delay);
   });
 }
