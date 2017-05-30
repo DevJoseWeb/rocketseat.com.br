@@ -104,12 +104,24 @@
       .action {
         margin: 30px 0 10px 0;
 
-        @media all and (max-width: 500px) and (min-width: 390px) {
+        @media all and (max-width: 550px) and (min-width: 481px) {
+          font-size: 24px;
+        }
+
+        @media all and (max-width: 480px) and (min-width: 430px) {
           font-size: 20px;
         }
 
-        @media all and (max-width: 390px) {
+        @media all and (max-width: 429px) and (min-width: 390px) {
+          font-size: 16px;
+        }
+
+        @media all and (max-width: 389px) and (min-width: 341px) {
           font-size: 14px;
+        }
+
+        @media all and (max-width: 340px) {
+          font-size: 12px;
         }
       }
     }
