@@ -2,6 +2,8 @@ User-agent: *
 
 Allow: /
 Disallow: /obrigado
+Disallow: /workshop-jumpstart-confirmado
+Disallow: /ebook-7-passos-confirmado
 Disallow: /_index
 
 Sitemap: http://rocketseat.com.br/sitemap.xml

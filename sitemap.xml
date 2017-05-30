@@ -5,17 +5,27 @@
     http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://rocketseat.com.br/</loc>
+  <loc>http://rocketseat.com.br</loc>
   <lastmod>2017-05-27T00:30:40+00:00</lastmod>
   <changefreq>always</changefreq>
 </url>
 <url>
-  <loc>http://rocketseat.com.br/termos-de-uso</loc>
+  <loc>http://rocketseat.com.br/termos-de-uso.html</loc>
   <lastmod>2017-05-27T00:30:40+00:00</lastmod>
   <changefreq>always</changefreq>
 </url>
 <url>
-  <loc>http://rocketseat.com.br/politica-de-privacidade</loc>
+  <loc>http://rocketseat.com.br/politica-de-privacidade.html</loc>
+  <lastmod>2017-05-27T00:30:40+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://rocketseat.com.br/ebook-7-passos.html</loc>
+  <lastmod>2017-05-27T00:30:40+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://rocketseat.com.br/workshop-jumpstart.html</loc>
   <lastmod>2017-05-27T00:30:40+00:00</lastmod>
   <changefreq>always</changefreq>
 </url>
