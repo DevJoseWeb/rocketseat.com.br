@@ -4,6 +4,8 @@ Allow: /
 Disallow: /obrigado
 Disallow: /workshop-jumpstart-confirmado
 Disallow: /ebook-7-passos-confirmado
+Disallow: /nao-encontrado
 Disallow: /_index
+Disallow: /temp.html
 
 Sitemap: http://rocketseat.com.br/sitemap.xml

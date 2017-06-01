@@ -2,8 +2,8 @@
 
 @import 'partials/defaults';
 @import 'partials/globals';
+@import 'partials/animations';
 
-@import 'scenes/temp';
 @import 'scenes/header';
 @import 'scenes/primary';
 @import 'scenes/profiles';
@@ -11,4 +11,8 @@
 @import 'scenes/form';
 @import 'scenes/footer';
 
+@import 'scenes/temp';
 @import 'scenes/ebook-7-passos';
+@import 'scenes/about';
+@import 'scenes/workshop';
+@import 'scenes/404';
