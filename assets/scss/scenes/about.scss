@@ -6,6 +6,11 @@
       img:first-child {
         animation: rocket 4s linear infinite alternate;
       }
+
+      @media all and (max-width: 900px) {
+        flex-direction: column;
+        justify-content: center;
+      }
     }
 
     #primary {
