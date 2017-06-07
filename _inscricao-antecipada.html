@@ -45,19 +45,26 @@
 
   <article id="primary">
     <div class="content">
-      <h3>Vagas esgotadas</h3>
+      <h3>Inscrição antecipada</h3>
 
-      <p>Mas não se preocupe, esse foi <strong>apenas o começo</strong>.</p>
+      <form action="http://hike.rocketseat.com.br/api/payments" method="POST">
+        <span>Preencha seus dados e realize o pagamento com <strong>70% de desconto</strong></span>
 
-      <p>Em breve iremos <strong>abrir oficialmente</strong> as incrições para o curso jumpstart.</p>
+        <p><strong>Só hoje</strong>: R$296,10 à vista ou <strong>10x de R$29,61</strong> sem juros</p>
 
-      <p>Para ficar por dentro, adicione <a href="mailto:oi@rocketseat.com.br">oi@rocketseat.com.br</a> aos seus contatos do seu cliente de e-mail, e siga a <strong>RocketSeat</strong> nas redes sociais.</p>
+        <input placeholder="Seu nome" name="data[name]" type="text" required>
+        <input placeholder="Seu e-mail" name="data[email]" type="email" required>
+        <input placeholder="Seu telefone" name="data[phone]" type="tel" required>
 
-      <div class="social-buttons">
-        <a href="https://www.youtube.com/channel/rocketseat" target="_blank" class="youtube"></a>
-        <a href="https://www.facebook.com/rocketseat" target="_blank" class="facebook"></a>
-        <a href="https://www.instagram.com/launchbase" target="_blank" class="instagram"></a>
-        <a href="https://www.twitter.com/rocketseat" target="_blank" class="twitter"></a>
+        <input type="hidden" name="data[redirect_success_url]" value="http://rocketseat.com.br/inscricao-confirmada.html">
+        <input type="hidden" name="data[redirect_error_url]" value="http://rocketseat.com.br/inscricao-falha.html">
+
+        <button type="submit">Avançar</button>
+        <small>Você será redirecionado para o ambiente de pagamentos do pagseguro.</small>
+      </form>
+
+      <div class="selos">
+        <img src="assets/images/inscricao/garantia.png" alt="garantia do dinheiro de volta">
       </div>
     </div>
   </article>
