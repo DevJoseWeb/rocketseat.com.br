@@ -1,0 +1,60 @@
+name: Desqer
+title: Seu novo assistente pessoal de agendamentos
+email: dev@desqer.com
+description: Prazer, sou o Desqer. Seu novo assistente pessoal de agendamentos.
+baseurl: ""
+url: "http://desqer.com"
+timezone: America/Sao_Paulo
+locale: pt_BR
+permalink: none
+
+# Social
+
+facebook_publisher:
+facebook_author:
+
+facebook_pixel_id: 1261373730605532
+google_analytics_id: UA-88846136-2
+
+# Assets Compression
+assets:
+    cache: _assets/_cache
+    prefix: "/assets"
+
+    autoprefixer:
+        browsers:
+          - "last 2 versions"
+          - "IE > 9"
+
+    assets:
+        - "*.png"
+        - "*.svg"
+
+    sources:
+        - _assets/css
+        - _assets/img
+        - _assets/js
+        - _assets
+
+# Build settings
+markdown: kramdown
+
+# Pagination
+paginate: 12
+paginate_path: "/blog/:num/"
+
+# Collection
+collections:
+    ebooks:
+        output: true
+        permalink: /:title.html
+
+gems:
+    - jekyll-paginate
+    - jekyll-assets
+    - jekyll-sitemap
+    - jekyll-feed
+
+exclude:
+    - Gemfile
+    - Gemfile.lock
