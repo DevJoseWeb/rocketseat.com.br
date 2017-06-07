@@ -1,9 +1,9 @@
-name: Desqer
-title: Seu novo assistente pessoal de agendamentos
-email: dev@desqer.com
-description: Prazer, sou o Desqer. Seu novo assistente pessoal de agendamentos.
+name: RocketSeat
+title: Tire sua ideia do papel e crie sua própria startup
+email: oi@rocketseat.com.br
+description: Tire sua ideia do papel e crie sua própria startup
 baseurl: ""
-url: "http://desqer.com"
+url: "http://rocketseat.com.br"
 timezone: America/Sao_Paulo
 locale: pt_BR
 permalink: none
@@ -13,8 +13,8 @@ permalink: none
 facebook_publisher:
 facebook_author:
 
-facebook_pixel_id: 1261373730605532
-google_analytics_id: UA-88846136-2
+facebook_pixel_id: 227628427740337
+google_analytics_id: UA-99997611-1
 
 # Assets Compression
 assets:
