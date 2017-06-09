@@ -1,9 +1,28 @@
+@import 'vars';
+
 @import
-    'variables',
-    'base',
-    'utils',
-    'layout',
-    'pages',
-    'ebook',
-    'syntax-highlighting'
+  'libs/normalize',
+  'libs/syntax-highlighting'
 ;
+
+@import
+  'partials/defaults',
+  'partials/animations',
+  'partials/globals',
+  'partials/utils'
+;
+
+@import 'scenes/header';
+@import 'scenes/primary';
+@import 'scenes/profiles';
+@import 'scenes/faq';
+@import 'scenes/form';
+@import 'scenes/footer';
+
+@import 'scenes/temp';
+@import 'scenes/ebook-7-passos';
+@import 'scenes/about';
+@import 'scenes/workshop';
+@import 'scenes/404';
+@import 'scenes/subscribe';
+

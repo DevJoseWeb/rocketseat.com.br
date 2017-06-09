@@ -1,0 +1,28 @@
+.temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FBFBFB;
+
+  #main-header {
+    justify-content: center;
+    height: auto;
+
+    h1 {
+      max-width: calc(100% - 40px);
+      width: 380px;
+
+      img {
+        &:first-child {
+          height: 70px;
+          animation: rocket 4s linear infinite alternate;
+        }
+
+        &:last-child {
+          width: 280px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

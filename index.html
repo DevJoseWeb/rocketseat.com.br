@@ -2,200 +2,55 @@
 layout: default
 ---
 
-<section class="hero">
-    <h1>Prazer, sou o RocketSeat</h1>
-    <p>Seu novo assistente pessoal de agendamentos</p>
-</section>
+{% include subscriptions_out.html %}
 
-<section>
+<div id="page-home">
+  <article id="primary">
+    <h2>A maior comunidade de programadores </br>dispostos a mudar o mundo!</h2>
+    <p>Decole suas ideias em velocidade recorde com as melhores ferramentas.</p>
+  </article>
+
+  <article id="video">
+    <h3>Entenda como a RocketSeat vai lhe ajudar a </br><strong>tirar sua ideias do papel!</strong></h3>
+
+    <iframe src="http://google.com"></iframe>
+  </article>
+
+  <article id="profiles">
     <header>
-        <h2>Pode ficar tranquilo, sua agenda está em boas mãos</h2>
-        <p>Entenda como posso te ajudar</p>
+      <h2>Quem são os pilotos?</h2>
     </header>
 
-    <div class="zen">
-        <div class="zen-item">
-            <div class="img">
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#zen-home"></use></svg>
-            </div>
-            <p>Você me diz quais serviços oferece e dá outros detalhes sobre o seu negócio, como endereço, horário e valor</p>
+    <div class="wrap">
+      <div class="profile">
+        <span>{% img 'pilots/cleiton-souza.jpg' alt='Cleiton Souza' %}</span>
+        <h3>Cleiton Souza</h3>
+        <p>Programador full-stack no estilo "think twice, code once". Trabalhando com desenvolvimento web há mais de 6 anos, tem uma paixão secreta por Laravel + Vue.js.</p>
+        <div class="social">
+          <a href="https://github.com/cleitonsouza" target="_blank" class="github">{% img 'icons/github.svg' %}</a>
+          <a href="https://www.linkedin.com/in/cleiton-souza-829a0b7a/" target="_blank" class="linkedin">{% img 'icons/linkedin.svg' %}</a>
         </div>
-        <div class="separator">
-            <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#zen-separator"></use></svg>
+      </div>
+
+      <div class="profile">
+        <span>{% img 'pilots/diego-fernandes.jpg' alt='Diego Fernandes' %}</span>
+        <h3>Diego Fernandes</h3>
+        <p>Programador full-stack no estilo "10x". Codando para a web há mais de 7 anos, suas maiores paixões são Laravel + ReactNative.</p>
+        <div class="social">
+          <a href="https://github.com/diego3g" target="_blank" class="github">{% img 'icons/github.svg' %}</a>
+          <a href="https://www.linkedin.com/in/diego-schell-fernandes-9b2102120/" target="_blank" class="linkedin">{% img 'icons/linkedin.svg' %}</a>
         </div>
-        <div class="zen-item">
-            <div class="img">
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#zen-spy"></use></svg>
-            </div>
-            <p>Eu te ajudo a se conectar com os clientes, que podem visualizar seus serviços e marcar um horário com você</p>
+      </div>
+
+      <div class="profile">
+        <span>{% img 'pilots/robson-marques.jpg' alt='Robson Marques' %}</span>
+        <h3>Robson Marques</h3>
+        <p>Programador back-end no estilo "dinossauro". Envolvido com programação desde 1994, sua paixão é sem dúvida o empreendedorismo.</p>
+        <div class="social">
+          <a href="https://github.com/robsonmarques" target="_blank" class="github">{% img 'icons/github.svg' %}</a>
+          <a href="https://www.linkedin.com/in/coding/" target="_blank" class="linkedin">{% img 'icons/linkedin.svg' %}</a>
         </div>
-        <div class="separator">
-            <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#zen-separator"></use></svg>
-        </div>
-        <div class="zen-item">
-            <div class="img">
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#zen-calendar"></use></svg>
-            </div>
-            <p>Todo o fluxo de agendamento é automatizado, e as informações são organizadas para facilitar ao máximo sua vida</p>
-        </div>
-        <div class="separator">
-            <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#zen-separator"></use></svg>
-        </div>
-        <div class="zen-item">
-            <div class="img">
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#zen-stars"></use></svg>
-            </div>
-            <p>Assim sobra tempo pra você entregar o melhor serviço, se destacar nas avaliações e conquistar muito mais clientes!</p>
-        </div>
+      </div>
     </div>
-</section>
-
-<div class="container-dark">
-    <section>
-        <div class="description">
-            <div class="description-item">
-                <div class="text">
-                    <h2>Feito para facilitar sua vida</h2>
-                    <p>Eu sei o quanto seu tempo é valioso, e por isso fui criado para ser simples. Além disso, eu garanto a organização da sua agenda, evito conflitos de horário e você não perde nenhum compromisso.</p>
-                </div>
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#description-clock"></use></svg>
-            </div>
-
-            <div class="description-item">
-                <div class="text">
-                    <h2>Eficiente e incansável</h2>
-                    <p>Quando o assunto é agendamento, ninguém melhor que um aplicativo inteligente para lidar com o serviço. Enquanto eu trabalho você ganha tempo e pode focar no que sabe fazer de melhor.</p>
-                </div>
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#description-brain"></use></svg>
-            </div>
-
-            <div class="description-item">
-                <div class="text">
-                    <h2>A qualquer hora, em qualquer lugar</h2>
-                    <p>Se você já está na cama e lembra que precisa consultar sua agenda, ou está na rua e tem que marcar um horário para aquele cliente que te pegou de surpresa, não tem problema. Estou sempre à mão.</p>
-                </div>
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#description-finger"></use></svg>
-            </div>
-
-            <div class="description-item">
-                <div class="text">
-                    <h2>Tudo sob controle</h2>
-                    <p>Além de ficar por dentro dos agendamentos recebidos, compromissos e horários, ainda te mantenho informado de todo o histórico de serviços prestados e faturas pagas ou em aberto.</p>
-                </div>
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#description-paper"></use></svg>
-            </div>
-
-            <div class="description-item">
-                <div class="text">
-                    <h2>Sempre pronto a atender o cliente</h2>
-                    <p>Seja para marcar um horário, confirmar a presença, consultar os serviços ou ser lembrado do compromisso, seus clientes podem sempre contar comigo. Afinal, minha função também é facilitar a vida deles.</p>
-                </div>
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#description-person"></use></svg>
-            </div>
-
-            <div class="description-item">
-                <div class="text">
-                    <h2>Todos os clientes na palma da sua mão</h2>
-                    <p>Através dos destaques nas avaliações ou simplesmente pela facilidade de encontrar e agendar seus serviços, você vai agregar valor e aumentar a visibilidade do seu negócio. E claro, ganhar mais clientes.</p>
-                </div>
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#description-growth"></use></svg>
-            </div>
-        </div>
-    </section>
+  </article>
 </div>
-
-<section>
-    <header>
-        <h2>Se o serviço depende de hora marcada, pode contar comigo</h2>
-        <p>Feito para todo tipo de agendamento</p>
-    </header>
-
-    <div class="services">
-        <div class="service-item">
-            <div class="img">
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#service-beauty"></use></svg>
-            </div>
-            <div class="text">
-                <h3>Beleza</h3>
-                <p>Nunca foi tão fácil controlar a agenda do seu salão de beleza ou clínica estética. A gestão dos serviços que você oferece pode ser feita por profissional: cabeleireiros, manicures, maquiadores, cada um com seus próprios compromissos e horários.</p>
-            </div>
-        </div>
-
-        <div class="service-item">
-            <div class="img">
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#service-music"></use></svg>
-            </div>
-            <div class="text">
-                <h3>Música</h3>
-                <p>Conservatórios ou professores de música podem disponibilizar seus horários livres para aulas semanais ou de reposição. Você marca uma vez e passa a ter o compromisso recorrente com o aluno, sem conflito de horários.</p>
-            </div>
-        </div>
-
-        <div class="service-item">
-            <div class="img">
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#service-fitness"></use></svg>
-            </div>
-            <div class="text">
-                <h3>Fitness</h3>
-                <p>Se o seu negócio é malhar, no agendamento para academias e personal trainers a gente também pega pesado. Você pode definir limite de pessoas por horário e profissional, e permitir agendamentos sob demanda ou horários fixos.</p>
-            </div>
-        </div>
-
-        <div class="service-item">
-            <div class="img">
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#service-health"></use></svg>
-            </div>
-            <div class="text">
-                <h3>Saúde</h3>
-                <p>Dentistas, fisioterapeutas, nutricionistas, nunca foi tão simples ter uma agenda. Você pode escolher os serviços que permitem agendamento online. Ou ainda agendar você mesmo, e permitir que o cliente confirme e seja lembrado da consulta.</p>
-            </div>
-        </div>
-
-        <div class="service-item">
-            <div class="img">
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#service-dance"></use></svg>
-            </div>
-            <div class="text">
-                <h3>Dança</h3>
-                <p>Da zoomba ao ballet, sejam aulas individuais ou em grupo, todo o fluxo de agendamentos e controle de horários pode ser feito de forma simples e automática, dando mais tempo para você fazer o que ama.</p>
-            </div>
-        </div>
-
-        <div class="service-item">
-            <div class="img">
-                <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#service-education"></use></svg>
-            </div>
-            <div class="text">
-                <h3>Outros</h3>
-                <p>Não importa o tipo de negócio, se o seu serviço precisa ter hora marcada, sua vida vai ficar muito mais fácil. Minha missão é ajudar você a crescer e lotar sua agenda, sem nenhuma dor de cabeça.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="price-section">
-    <header>
-        <h2>E quanto custa?</h2>
-    </header>
-    <h3 class="price">Grátis</h3>
-    <p>Sério. De graça, pra sempre!</p>
-</section>
-
-<section class="hero hero-small email-action">
-    <h2>Pronto para ganhar tempo e clientes sem gastar nada?</h2>
-    <p>Não perca o lançamento, deixe seu melhor e-mail para ser avisado</p>
-
-    <form action="http://hike.rocketseat.com.br/api/subscriptions" method="post">
-        <input type="hidden" name="data[redirect_url]" value="http://rocketseat.com.br/pre-lancamento-obrigado.html">
-        <input type="hidden" name="data[confirm_redirect_url]" value="http://rocketseat.com.br/pre-lancamento-confirmado.html">
-        <input type="hidden" name="data[list_id]" value="307d8df4-04df-45e1-8d51-f6f2d2cf473f">
-
-        <input type="text" name="data[email]" placeholder="Digite seu e-mail" required>
-
-        <button type="submit">
-            <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#form-check"></use></svg>
-        </button>
-    </form>
-
-    <span class="hint">PS: Também não gosto de spam ;)</span>
-</section>

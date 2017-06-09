@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+$rocket: #FD5A5A;
+
+$white: #FFF;
+$light: #999;
+$default: #666;
+$black: #212121;
+
+$orange: #FFB33D;
+$orange-dark: #AD772C;
+
+/* main vars */
+$base-font-family: 'PT Sans Narrow', Arial, sans-serif;
+$base-font-size:   18px;
+$small-font-size:  14px;
+$base-line-height: 1.6;
+
+$spacing-unit:     20px;
+
+$text-color:       $default;
+$background-color: $white;
+$brand-color:      $rocket;
+
+$main-color:       $default;
+$main-color-light: lighten($main-color, 30%);
+$main-color-dark:  darken($main-color, 5%);
+
+$link-color:        #2A5DB0;
+$link-color-dark:   darken($link-color, 5%);
+
+$grey-color:       #999;
+$grey-color-light: lighten($grey-color, 26.5%);
+$grey-color-dark:  darken($grey-color, 40%);

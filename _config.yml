@@ -10,8 +10,8 @@ permalink: none
 
 # Social
 
-facebook_publisher:
-facebook_author:
+facebook_publisher: rocketseat
+facebook_author: rocketseat
 
 facebook_pixel_id: 227628427740337
 google_analytics_id: UA-99997611-1
@@ -58,3 +58,7 @@ gems:
 exclude:
     - Gemfile
     - Gemfile.lock
+
+# Server Config options
+livereload: true     # You no longer need to include --livereload
+reload_port: 5678    # If you don't want to use the default port

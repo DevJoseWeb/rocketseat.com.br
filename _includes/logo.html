@@ -1,3 +1,9 @@
+{% if page.url == "/" %}
+   <h1>
+{% endif %}
 <a href="{{ site.baseurl }}/">
-    <img class="logo" src="{{ 'logo.svg' | asset_path }}" title="{{ site.title }}">
+  <img class="logo" src="{{ 'rocketseat-logo.svg' | asset_path }}" title="{{ site.name }} | {{ site.title }}">
 </a>
+{% if page.url == "/" %}
+   </h1>
+{% endif %}

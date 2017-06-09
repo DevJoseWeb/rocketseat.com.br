@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://rocketseat.com.br</loc>
+  <lastmod>2017-05-27T00:30:40+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://rocketseat.com.br/termos-de-uso.html</loc>
+  <lastmod>2017-05-27T00:30:40+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://rocketseat.com.br/politica-de-privacidade.html</loc>
+  <lastmod>2017-05-27T00:30:40+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://rocketseat.com.br/ebook-7-passos.html</loc>
+  <lastmod>2017-05-27T00:30:40+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+<url>
+  <loc>http://rocketseat.com.br/workshop-jumpstart.html</loc>
+  <lastmod>2017-05-27T00:30:40+00:00</lastmod>
+  <changefreq>always</changefreq>
+</url>
+</urlset>

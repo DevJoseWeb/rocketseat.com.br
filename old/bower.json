@@ -1,0 +1,24 @@
+{
+  "name": "rocketseat.com.br",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Cleiton Souza <cleiton7souza@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/RocketSeat/rocketseat.com.br",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "html5shiv": "^3.7.3",
+    "normalize-css": "^7.0.0",
+    "jquery": "^3.2.1"
+  }
+}

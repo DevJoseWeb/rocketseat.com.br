@@ -1,0 +1,36 @@
+#main-header {
+  @extend .container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+
+  @media all and (max-width: 430px) {
+    flex-direction: column;
+    justify-content: center;
+
+    h2 img {
+      height: 20px;
+      margin-top: 10px;
+    }
+  }
+
+  #logo {
+    img:first-child {
+      margin-right: 9px;
+    }
+
+    img:last-child {
+      margin-top: -5px;
+    }
+
+    a {
+      display: flex;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}

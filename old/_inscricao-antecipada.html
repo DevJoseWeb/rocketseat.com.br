@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+  <meta name="theme-color" content="#FD5A5A">
+
+  <title>RocketSeat - Inscrição antecipada</title>
+  <meta name="description" content="Tire sua ideia do papel e crie sua própria startup">
+
+  <meta property="og:url" content="http://rocketseat.com.br" />
+  <meta property="og:title" content="RocketSeat - Tire sua ideia do papel e crie sua própria startup" />
+  <meta property="og:description" content="Tire sua ideia do papel e crie sua própria startup" />
+  <meta property="og:site_name" content="RocketSeat"/>
+  <meta property="og:image" content="http://rocketseat.com.br/assets/images/rocketseat-og.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+  <link href="assets/build/lib.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-99997611-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+</head>
+<body id="page-subscribe">
+  <header id="main-header">
+    <h1 id="logo">
+      <a href="http://rocketseat.com.br">
+        <img src="assets/images/rocket.svg" alt="">
+        <img src="assets/images/rocketseat.svg" alt="RocketSeat">
+      </a>
+    </h1>
+
+    <h2><a href="http://rocketseat.com.br/workshop-jumpstart.html"><img src="assets/images/workshop.svg" alt="workshop Jumpstart"></a></h2>
+  </header>
+
+  <article id="primary">
+    <div class="content">
+      <h3>Inscrição antecipada</h3>
+
+      <form action="http://hike.rocketseat.com.br/api/payments" method="POST">
+        <span>Preencha seus dados e realize o pagamento com <strong>70% de desconto</strong></span>
+
+        <p><strong>Só hoje</strong>: R$296,10 à vista ou <strong>10x de R$29,61</strong> sem juros</p>
+
+        <input placeholder="Seu nome" name="data[name]" type="text" required>
+        <input placeholder="Seu e-mail" name="data[email]" type="email" required>
+        <input placeholder="Seu telefone" name="data[phone]" type="tel" required>
+
+        <input type="hidden" name="data[redirect_success_url]" value="http://rocketseat.com.br/inscricao-confirmada.html">
+        <input type="hidden" name="data[redirect_error_url]" value="http://rocketseat.com.br/inscricao-falha.html">
+
+        <button type="submit">Avançar</button>
+        <small>Você será redirecionado para o ambiente de pagamentos do pagseguro.</small>
+      </form>
+
+      <div class="selos">
+        <img src="assets/images/inscricao/garantia.png" alt="garantia do dinheiro de volta">
+      </div>
+    </div>
+  </article>
+
+  <footer id="main-footer">
+    <ul>
+      <li><a href="http://rocketseat.com.br/termos-de-uso.html">termos de uso</a></li>
+      <li><a href="http://rocketseat.com.br/politica-de-privacidade.html">políticas de privacidade</a></li>
+    </ul>
+
+    <q>Quando te oferecem um assento em um foguete, você não pergunta qual assento. <b>Você simplesmente embarca</b>.</q>
+    <cite>- Eric Schmidt, Google</cite>
+
+    <div class="copyright">
+      &copy; 2017 RocketSeat. Feito com <img src="assets/images/icons/heart.svg" alt="<3"> no <a href="http://fb.com/covalley" target="_blank">CoValley</a>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="assets/build/lib.min.js"></script>
+  <script type="text/javascript" src="assets/build/functions.min.js"></script>
+</body>
