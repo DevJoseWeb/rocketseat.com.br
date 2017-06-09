@@ -1,6 +1,6 @@
-#page-ebook-7-passos {
+.page-ebook-7-passos {
   #primary-content {
-    background: url(assets/img/ebook-7-passos/background.jpg) #FF5B5C top left no-repeat;
+    background: url(../img/ebooks/brush.jpg) #FF5B5C top left no-repeat;
     // background-size: 100% auto;
 
     #main-header {
@@ -124,6 +124,10 @@
     }
   }
 
+  #main-footer {
+    margin-top: 0;
+  }
+
   #footer-container {
     background-color: $rocket;
 
@@ -134,7 +138,7 @@
     }
 
     #main-footer {
-      border-top-color: #EB5954;
+      border-top-color: darken($rocket, 3);
     }
   }
 }

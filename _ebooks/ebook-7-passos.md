@@ -1,18 +1,12 @@
 ---
 layout: ebook
+class: page-ebook-7-passos
 title: 7 passos para aprender a programar
 description: "Baixar e-book: 7 passos para aprender a programar em qualquer linguagem"
 ---
 
 <div id="primary-content">
-  <header id="main-header">
-    <h1 id="logo">
-      <a href="http://rocketseat.com.br">
-        <img src="assets/img/rocket.svg" alt="">
-        <img src="assets/img/rocketseat.svg" alt="RocketSeat">
-      </a>
-    </h1>
-  </header>
+  {% include header.html %}
 
   <article>
     <div class="container">
@@ -25,7 +19,7 @@ description: "Baixar e-book: 7 passos para aprender a programar em qualquer ling
       </div>
 
       <div class="ebook">
-        <img src="assets/img/ebook-7-passos/ebook-7-passos.png" alt="E-book 7 passos para aprender a programar em qualquer linguagem">
+        <img src="assets/img/ebooks/ebook-7-passos.png" alt="E-book 7 passos para aprender a programar em qualquer linguagem">
       </div>
     </div>
   </article>
@@ -55,6 +49,10 @@ description: "Baixar e-book: 7 passos para aprender a programar em qualquer ling
     <button type="submit">Quero o e-book gratuito!</button>
   </form>
 </article>
+
+<div id="footer-container">
+  {% include footer.html %}
+</div>
 
 <script>
   fbq('track', 'Lead');

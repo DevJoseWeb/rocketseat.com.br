@@ -1,2 +1,8 @@
 .layout-ebook {
+  #main-header {
+    .slack,
+    nav {
+      display: none !important;
+    }
+  }
 }
