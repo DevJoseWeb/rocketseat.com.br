@@ -3,19 +3,34 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 110px;
+  padding: 30px 0;
 
   @media all and (max-width: 430px) {
-    flex-direction: column;
-    justify-content: center;
+  }
 
-    h2 img {
-      height: 20px;
-      margin-top: 10px;
+  #logo-wrap {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      display: flex;
+    }
+
+    a {
+      display: inline-flex;
+
+      &:last-child {
+        margin-left: 15px;
+      }
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
     }
   }
 
-  #logo {
+  .logo {
     img:first-child {
       margin-right: 9px;
     }
@@ -23,13 +38,37 @@
     img:last-child {
       margin-top: -5px;
     }
+  }
 
-    a {
+  .slack {
+    line-height: 1;
+    padding-left: 43px;
+    border-left: 1px solid $grey-color-light;
+    background: url(../icons/slack.svg) 12px center no-repeat;
+    background-size: 25px auto;
+  }
+
+  #main-menu {
+    align-self: flex-end;
+    color: $main-color-dark;
+    font-weight: bold;
+
+    ul {
       display: flex;
+      list-style: none;
 
-      &:hover,
-      &:focus {
-        text-decoration: none;
+      li:not(:first-child) {
+        margin-left: 30px;
+      }
+
+      a {
+        transition: all linear 150ms;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+          color: $main-color;
+        }
       }
     }
   }

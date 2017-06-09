@@ -23,8 +23,8 @@ $background-color: $white;
 $brand-color:      $rocket;
 
 $main-color:       $default;
-$main-color-light: lighten($main-color, 30%);
-$main-color-dark:  darken($main-color, 5%);
+$main-color-light: #999;
+$main-color-dark:  #333;
 
 $link-color:        #2A5DB0;
 $link-color-dark:   darken($link-color, 5%);
@@ -32,3 +32,12 @@ $link-color-dark:   darken($link-color, 5%);
 $grey-color:       #999;
 $grey-color-light: lighten($grey-color, 26.5%);
 $grey-color-dark:  darken($grey-color, 40%);
+
+$content-width: 1100px;
+
+@mixin content() {
+  display: block;
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+}

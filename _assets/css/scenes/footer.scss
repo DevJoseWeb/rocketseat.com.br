@@ -4,13 +4,14 @@
   align-items: center;
   flex-direction: column;
   padding-top: 30px;
+  margin-top: 30px;
   text-align: center;
-  border-top: 1px solid $grey-color-dark;
+  border-top: 1px solid $grey-color-light;
   font-size: 14px;
   color: $light;
 
   ul {
-    color: #666;
+    color: $main-color;
     margin-bottom: 30px;
     list-style: none;
 
@@ -35,6 +36,11 @@
 
   .copyright {
     padding: 20px 0;
+    font-size: 13px;
+
+    .icon-heart {
+      color: $rocket;
+    }
 
     a {
       font-weight: bold;

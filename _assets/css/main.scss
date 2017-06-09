@@ -13,6 +13,14 @@
   'partials/custom-fonts'
 ;
 
+@import
+  'layouts/default',
+  'layouts/blog',
+  'layouts/ebook',
+  'layouts/page',
+  'layouts/post'
+;
+
 @import 'scenes/header';
 @import 'scenes/primary';
 @import 'scenes/profiles';
@@ -26,4 +34,3 @@
 @import 'scenes/workshop';
 @import 'scenes/404';
 @import 'scenes/subscribe';
-
