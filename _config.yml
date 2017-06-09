@@ -29,12 +29,15 @@ assets:
     assets:
         - "*.png"
         - "*.svg"
+        - "*.ttf"
+        - "*.woff"
 
     sources:
+        - _assets
         - _assets/css
         - _assets/img
         - _assets/js
-        - _assets
+        - _assets/fonts
 
 # Build settings
 markdown: kramdown
