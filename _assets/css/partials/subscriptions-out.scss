@@ -1,0 +1,35 @@
+#subscriptions-out {
+  @include container(false);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 12px 12px 20px;
+  border: 1px solid $grey-color-light;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 30px;
+
+  span {
+    i {
+      margin-right: 5px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .action {
+    font-size: 14px;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: $white;
+    background-color: $orange;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}

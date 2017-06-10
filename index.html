@@ -5,54 +5,18 @@ layout: default
 {% include subscriptions_out.html %}
 
 <div id="page-home">
-  <article id="primary">
+  <section id="primary">
     <h2>A maior comunidade de programadores <br/>dispostos a mudar o mundo!</h2>
     <p>Decole suas ideias em velocidade recorde com as melhores ferramentas.</p>
-  </article>
+  </section>
 
-  <article id="video">
+  <section id="video">
     <h3>Entenda como a RocketSeat vai lhe ajudar a <br/><strong>tirar sua ideias do papel!</strong></h3>
 
     <div class="responsive-iframe">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/bMPXdM73nm8" frameborder="0" allowfullscreen></iframe>
     </div>
-  </article>
+  </section>
 
-  <article id="profiles">
-    <header>
-      <h2>Quem são os pilotos?</h2>
-    </header>
-
-    <div class="wrap">
-      <div class="profile">
-        <span>{% img 'pilots/cleiton-souza.jpg' alt='Cleiton Souza' %}</span>
-        <h3>Cleiton Souza</h3>
-        <p>Programador full-stack no estilo "think twice, code once". Trabalhando com desenvolvimento web há mais de 6 anos, tem uma paixão secreta por Laravel + Vue.js.</p>
-        <div class="social">
-          <a href="https://github.com/cleitonsouza" target="_blank" class="github"><i class="icon-github"></i></a>
-          <a href="https://www.linkedin.com/in/cleiton-souza-829a0b7a/" target="_blank" class="linkedin"><i class="icon-linkedin"></i></a>
-        </div>
-      </div>
-
-      <div class="profile">
-        <span>{% img 'pilots/diego-fernandes.jpg' alt='Diego Fernandes' %}</span>
-        <h3>Diego Fernandes</h3>
-        <p>Programador full-stack no estilo "10x". Codando para a web há mais de 7 anos, suas maiores paixões são Laravel + ReactNative.</p>
-        <div class="social">
-          <a href="https://github.com/diego3g" target="_blank" class="github"><i class="icon-github"></i></a>
-          <a href="https://www.linkedin.com/in/diego-schell-fernandes-9b2102120/" target="_blank" class="linkedin"><i class="icon-linkedin"></i></a>
-        </div>
-      </div>
-
-      <div class="profile">
-        <span>{% img 'pilots/robson-marques.jpg' alt='Robson Marques' %}</span>
-        <h3>Robson Marques</h3>
-        <p>Programador back-end no estilo "dinossauro". Envolvido com programação desde 1994, sua paixão é sem dúvida o empreendedorismo.</p>
-        <div class="social">
-          <a href="https://github.com/robsonmarques" target="_blank" class="github"><i class="icon-github"></i></a>
-          <a href="https://www.linkedin.com/in/coding/" target="_blank" class="linkedin"><i class="icon-linkedin"></i></a>
-        </div>
-      </div>
-    </div>
-  </article>
+  {% include profiles.html %}
 </div>

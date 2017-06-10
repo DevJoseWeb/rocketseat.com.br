@@ -1,4 +1,4 @@
-#form {
+.form-default {
   @extend .article;
   @extend .container;
   width: 100%;
@@ -43,25 +43,6 @@
 
       &::placeholder {
         color: lighten($default, 30);
-      }
-    }
-
-    button {
-      display: inline-block;
-      padding: 0 20px;
-      font-weight: bold;
-      color: $white;
-      font-size: 22px;
-      background-color: $orange;
-      border-radius: 5px;
-      border-bottom: 4px solid $orange-dark;
-      transition: all linear 150ms;
-
-      &:hover,
-      &:focus {
-        text-decoration: none;
-        border-color: lighten($orange-dark, 5);
-        background-color: lighten($orange, 5);
       }
     }
   }

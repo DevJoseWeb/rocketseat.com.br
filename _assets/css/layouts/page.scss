@@ -1,6 +1,6 @@
 .layout-page {
   .page-section {
-    @include content();
+    @include container();
 
     header {
       display: block;

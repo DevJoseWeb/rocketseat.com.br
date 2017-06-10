@@ -1,16 +1,12 @@
-@import 'vars';
+@import
+  'vars',
+  'mixins',
+  'animations'
+;
 
 @import
   'libs/normalize',
   'libs/syntax-highlighting'
-;
-
-@import
-  'partials/defaults',
-  'partials/animations',
-  'partials/globals',
-  'partials/utils',
-  'partials/custom-fonts'
 ;
 
 @import
@@ -21,16 +17,25 @@
   'layouts/post'
 ;
 
-@import 'scenes/header';
-@import 'scenes/primary';
-@import 'scenes/profiles';
-@import 'scenes/faq';
-@import 'scenes/form';
-@import 'scenes/footer';
+@import
+  'partials/defaults',
+  'partials/globals',
+  'partials/utils',
+  'partials/custom-fonts',
+  'partials/header',
+  'partials/footer',
+  'partials/social-buttons',
+  'partials/subscriptions-out',
+  'partials/profiles',
+  'partials/temp',
+  'partials/form-default',
+  'partials/faq'
+;
 
-@import 'scenes/temp';
-@import 'scenes/ebook-7-passos';
-@import 'scenes/about';
-@import 'scenes/workshop';
-@import 'scenes/404';
-@import 'scenes/subscribe';
+@import
+  'scenes/404',
+  'scenes/about',
+  'scenes/home',
+  'scenes/jumpstart',
+  'scenes/ebook-7-passos'
+;
