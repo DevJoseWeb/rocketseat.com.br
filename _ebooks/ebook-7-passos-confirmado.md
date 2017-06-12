@@ -20,7 +20,7 @@ description: "Baixar e-book: 7 passos para aprender a programar em qualquer ling
       </div>
 
       <div class="ebook">
-        <img src="assets/img/ebook-7-passos/ebook-7-passos.png" alt="E-book 7 passos para aprender a programar em qualquer linguagem">
+        <img src="assets/img/ebooks/ebook-7-passos.png" alt="E-book 7 passos para aprender a programar em qualquer linguagem">
       </div>
     </div>
   </article>

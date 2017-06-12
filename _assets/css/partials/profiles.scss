@@ -36,6 +36,7 @@
         display: inline-block;
         width: 150px;
         height: 150px;
+        flex-shrink: 0;
         border-radius: 50%;
         border: 5px solid $grey-color-light;
         overflow: hidden;

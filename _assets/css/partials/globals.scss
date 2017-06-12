@@ -43,6 +43,7 @@
 
   &:hover,
   &:focus {
+    color: $white;
     text-decoration: none;
     border-color: lighten($orange-dark, 5);
     background-color: lighten($orange, 5);
