@@ -2,8 +2,8 @@
 layout: ebook
 class: page-ebook-da-ideia-a-startup
 logo: white
-title: Da ideia à startup
-description: "Baixar e-book: Da ideia à startup - o que todo programador precisa saber para tirar a ideia do papel e dar vida à sua própria startup"
+title: Da Ideia à Startup
+description: "Baixar e-book: Da Ideia à Startup - o que todo programador precisa saber para tirar a ideia do papel e dar vida à sua própria startup"
 ---
 
 <div id="primary-content">
@@ -13,9 +13,7 @@ description: "Baixar e-book: Da ideia à startup - o que todo programador precis
     <div class="container">
       <div class="content">
         <h1>7 coisas que te impedem de tirar a ideia do papel</h1>
-
-        <p>E as vantagens que fazem do programador a pessoa ideal para dar vida à uma startup.</p>
-
+        <p>E as vantagens que fazem do programador a pessoa ideal para fundar uma startup</p>
         <a href="#" class="call-action">Baixar grátis!</a>
       </div>
 

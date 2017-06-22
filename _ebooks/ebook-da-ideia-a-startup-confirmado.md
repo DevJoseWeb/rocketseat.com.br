@@ -2,8 +2,8 @@
 layout: ebook
 class: page-ebook-da-ideia-a-startup confirmado
 logo: white
-title: Da ideia à startup
-description: "Baixar e-book: Da ideia à startup - o que todo programador precisa saber para tirar a ideia do papel e dar vida à sua própria startup"
+title: Da Ideia à Startup
+description: "Baixar e-book: Da Ideia à Startup - o que todo programador precisa saber para tirar a ideia do papel e dar vida à sua própria startup"
 ---
 
 <div id="primary-content">
@@ -14,17 +14,15 @@ description: "Baixar e-book: Da ideia à startup - o que todo programador precis
       <div class="content">
         <h1>Parabéns, agora só faltam duas coisas: baixar e ler</h1>
 
-        <strong>Se demorar pra receber o email, lembre de conferir sua caixa de spam. E qualquer problema que tiver só falar com a gente pelo email <a href="mailto:oi@rocketseat.com.br">oi@rocketseat.com.br</a></strong>
+        <p><strong>Se demorar pra receber o email, lembre de conferir sua caixa de spam. E qualquer problema que tiver só falar com a gente pelo email <a href="mailto:oi@rocketseat.com.br">oi@rocketseat.com.br</a></strong></p>
 
-        <p>Eu não vejo a hora de poder ouvir e compartilhar a sua história de sucesso. Mas até lá, essa pode ser uma jornada solitária. Por isso a gente criou uma comunidade no slack, onde você pode encontrar outros programadores iguais a você, com o mesmo propósito de tirar a ideia do papel e dar vida à própria startup. Para fazer parte dessa comunidade, basta clicar no link abaixo e solicitar o seu convite. E quando entrar lá, se apresenta contando um pouco da sua história para o resto do pessoal poder te conhecer. E a partir daí você pode contar com todos nós.</p>
+        <p>Esse e-book foi feito com todo o carinho pra te ajudar a dar os próximos passos na sua startup, mas ele é apenas uma parte da jornada. Por isso a gente sempre compartilha mais uma porção de conteúdos no Youtube, já aproveita pra dar uma olhada:</p>
 
-        <a href="https://join.slack.com/rocketseat/shared_invite/MTg5NzgzNjY3Nzc2LTE0OTYyMzQxNDctMWQ3ZmVkMDZkNg" class="call-action" target="_blank">Fazer parte da comunidade!</a>
-
-        <p>Pra se conectar ainda mais, não deixe de acompanhar a gente nas redes sociais.</p>
+        <a href="https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg" target="_blank" class="call-action">Acessar canal no Youtube!</a>
       </div>
 
       <div class="ebook">
-        <img src="assets/img/ebooks/ebook-da-ideia-a-startup.png" alt="E-book 7 passos para aprender a programar em qualquer linguagem">
+        <img src="assets/img/ebooks/ebook-da-ideia-a-startup.png" alt="E-book Da Ideia à Startup">
       </div>
     </div>
   </section>
