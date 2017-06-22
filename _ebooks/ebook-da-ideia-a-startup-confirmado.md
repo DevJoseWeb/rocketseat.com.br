@@ -14,7 +14,7 @@ description: "Baixar e-book: Da Ideia à Startup - o que todo programador precis
       <div class="content">
         <h1>Parabéns, agora só faltam duas coisas: baixar e ler</h1>
 
-        <p><strong>Lembre de conferir sua caixa de spam, e qualquer problema é só falar com a gente pelo email <a href="mailto:oi@rocketseat.com.br">oi@rocketseat.com.br</a></strong></p>
+        <p><strong>Lembre de conferir sua caixa de spam, e qualquer problema é só falar com a gente no slack ou pelo email <a href="mailto:oi@rocketseat.com.br">oi@rocketseat.com.br</a></strong></p>
 
         <p>Esse e-book foi feito com todo o carinho pra te ajudar a dar os próximos passos na sua startup, mas ele é apenas uma parte da jornada. Por isso a gente sempre compartilha uma porção de conteúdos no Youtube, aproveita pra dar uma olhada:</p>
 

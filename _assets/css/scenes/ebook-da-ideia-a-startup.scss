@@ -76,6 +76,11 @@
         width: 65%;
         padding-right: 25px;
 
+        a:hover,
+        a:focus {
+          color: #AEAEAEA;
+        }
+
         h1 {
           font-size: 54px;
         }

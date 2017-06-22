@@ -43,7 +43,7 @@ description: "Baixar e-book: Da Ideia à Startup - o que todo programador precis
     <input type="hidden" name="data[list_id]" value="79c76543-78a2-4c9b-a71d-f2a713bab910">
     <input type="hidden" name="data[redirect_url]" value="http://rocketseat.com.br/ebook-da-ideia-a-startup-confirmado.html">
     <button class="call-action" type="submit">Quero o e-book gratuito!</button>
-    <small>Seu link para download será enviado para o seu email</small>
+    <small>O link para download será enviado para o seu email</small>
   </form>
 </section>
 
