@@ -18,21 +18,24 @@ $('.dropdown').on('click', function(event) {
 /**
  * Call to action
  */
-var trigger = $('.action');
+var trigger = $('.call-action');
 var input  = $('input[name="data[name]"]');
 input = input.length ? input : $('input[name="data[email]"]');
 
 if (typeof trigger != 'undefined' && trigger.length && typeof input != 'undefined' && input.length) {
   trigger.on('click', function(event) {
     event.preventDefault();
-    var delay = 500;
 
-    setTimeout(function() {
-      input.focus();
-    }, delay);
+    if ($(event.target).attr('href') == '#' || event.target.attr('href') == '') {
+      var delay = 500;
 
-    $('html,body').animate({
-      scrollTop: input.offset().top
-    }, delay);
+      setTimeout(function() {
+        input.focus();
+      }, delay);
+
+      $('html,body').animate({
+        scrollTop: input.offset().top
+      }, delay);
+    }
   });
 }

@@ -11,11 +11,11 @@ description: "Baixar e-book: 7 passos para aprender a programar em qualquer ling
   <article>
     <div class="container">
       <div class="content">
-        <h2>7 passos para aprender a programar em qualquer linguagem</h2>
+        <h1>7 passos para aprender a programar em qualquer linguagem</h1>
 
         <p>O segredo para dominar de uma vez por todas<br/>a linguagem que você tanto deseja.</p>
 
-        <a href="#" class="action">Baixar grátis!</a>
+        <a href="#" class="call-action">Baixar grátis!</a>
       </div>
 
       <div class="ebook">

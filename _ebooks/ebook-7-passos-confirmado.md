@@ -11,7 +11,7 @@ description: "Baixar e-book: 7 passos para aprender a programar em qualquer ling
   <article>
     <div class="container">
       <div class="content">
-        <h2>Quase lá!</h2>
+        <h1>Quase lá!</h1>
         <br/>
         <p>Enviamos o link de download do e-book no seu e-mail.</p>
         <p>Se você não recebeu, cheque seu spam ou entre em contato no <a href="mailto:oi@rocketseat.com.br">oi@rocketseat.com.br</a></p>

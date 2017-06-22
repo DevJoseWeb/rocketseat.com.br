@@ -33,7 +33,7 @@
       .content {
         width: 70%;
 
-        h2 {
+        h1 {
           font-size: 50px;
         }
 
@@ -42,29 +42,14 @@
           font-size: 21px;
         }
 
-        .action {
-          display: inline-block;
+        .call-action {
           line-height: 60px;
-          padding: 0 20px;
           width: 100%;
           max-width: 300px;
           font-size: 28px;
-          font-weight: bold;
-          color: $white;
-          background-color: $orange;
-          border-radius: 5px;
-          border-bottom: 4px solid $orange-dark;
-          transition: all linear 150ms;
 
           @media all and (max-width: 350px) {
             font-size: 24px;
-          }
-
-          &:hover,
-          &:focus {
-            text-decoration: none;
-            border-color: lighten($orange-dark, 5);
-            background-color: lighten($orange, 5);
           }
         }
       }

@@ -1,0 +1,156 @@
+.page-ebook-da-ideia-a-startup {
+  $theme: #292C34;
+
+  @media all and (max-width: 900px) {
+    #main-header {
+      justify-content: center;
+    }
+  }
+
+  &.confirmado {
+    #primary-content section .content .call-action {
+      font-size: 25px;
+    }
+  }
+
+  #primary-content {
+    background-image: url(../img/code-bg.png);
+    background-repeat: no-repeat;
+    background-position: -115px -75px;
+    background-color: #2E2E38;
+
+    section {
+      color: $white;
+
+      @media all and (max-width: 900px) {
+        .content {
+          margin-top: 50px !important;
+          width: 100% !important;
+          padding-right: 0 !important;
+          text-align: center;
+
+          .call-action {
+            margin: 0 auto;
+            display: block;
+          }
+        }
+
+        .container {
+          padding-bottom: 50px !important;
+        }
+
+        .ebook {
+          display: none;
+        }
+      }
+
+      .container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 100px;
+      }
+
+      .content {
+        margin-top: 100px;
+        width: 65%;
+        padding-right: 110px;
+
+        h1 {
+          font-size: 54px;
+        }
+
+        p {
+          margin: 15px 0 30px 0;
+          font-size: 24px;
+        }
+
+        .call-action {
+          width: 100%;
+          max-width: 300px;
+          line-height: 60px;
+          font-size: 28px;
+          text-align: center;
+        }
+      }
+
+      .ebook {
+        position: absolute;
+        top: -50px;
+        right: 0;
+        width: 35%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #main-content {
+    @include container();
+    padding-bottom: 45px;
+
+    h2 {
+      font-size: 36px;
+      padding: 50px 0 20px 0;
+      color: $black;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+      text-align: justify;
+
+      &:not(:first-of-type) {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  #form {
+    max-width: 100%;
+    padding: 50px 0;
+    margin: 0;
+    color: $white;
+    background-color: $theme;
+
+    form {
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    input {
+      background-color: $white;
+    }
+
+    button {
+      font-size: 28px;
+
+      @media all and (max-width: 370px) {
+        font-size: 22px;
+      }
+    }
+  }
+
+  #main-footer {
+    margin-top: 0;
+  }
+
+  #footer-container {
+    background-color: $theme;
+
+    &,
+    #main-footer,
+    #main-footer a {
+      color: $white;
+    }
+
+    #main-footer {
+      border-top-color: darken($theme, 3);
+    }
+  }
+}

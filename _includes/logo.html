@@ -3,7 +3,11 @@
 {% endif %}
 <a href="{{ site.baseurl }}/" class="logo">
   <img src="{{ 'rocket.svg' | asset_path }}" alt="">
-  <img src="{{ 'rocketseat.svg' | asset_path }}" title="{{ site.name }} | {{ site.title }}" alt="{{ site.name }} | {{ site.title }}">
+  {% if page.logo == "white" %}
+    <img src="{{ 'rocketseat-white.svg' | asset_path }}" title="{{ site.name }} | {{ site.title }}" alt="{{ site.name }} | {{ site.title }}">
+  {% else %}
+    <img src="{{ 'rocketseat.svg' | asset_path }}" title="{{ site.name }} | {{ site.title }}" alt="{{ site.name }} | {{ site.title }}">
+  {% endif %}
 </a>
 {% if page.url == "/" %}
    </h1>
