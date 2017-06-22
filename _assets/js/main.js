@@ -24,9 +24,9 @@ input = input.length ? input : $('input[name="data[email]"]');
 
 if (typeof trigger != 'undefined' && trigger.length && typeof input != 'undefined' && input.length) {
   trigger.on('click', function(event) {
-    event.preventDefault();
 
     if ($(event.target).attr('href') == '#') {
+      event.preventDefault();
       var delay = 500;
 
       setTimeout(function() {

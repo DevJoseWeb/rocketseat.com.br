@@ -13,6 +13,17 @@
     #main-header {
       justify-content: center;
     }
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .ebook {
+        margin-top: 30px;
+        margin-bottom: -90px;
+      }
+    }
   }
 
   @media all and (max-width: 600px) {
@@ -52,23 +63,18 @@
         .container {
           padding-bottom: 50px !important;
         }
-
-        .ebook {
-          display: none;
-        }
       }
 
       .container {
         position: relative;
         display: flex;
         justify-content: space-between;
-        padding-bottom: 100px;
       }
 
       .content {
         margin-top: 100px;
         width: 65%;
-        padding-right: 110px;
+        padding-right: 25px;
 
         h1 {
           font-size: 54px;
@@ -77,6 +83,7 @@
         p {
           margin: 15px 0 30px 0;
           font-size: 24px;
+          line-height: 32px;
         }
 
         .call-action {
@@ -89,13 +96,10 @@
       }
 
       .ebook {
-        position: absolute;
-        top: -50px;
-        right: 0;
-        width: 35%;
+        margin-bottom: -50px;
 
         img {
-          width: 100%;
+          max-width: 100%;
         }
       }
     }
