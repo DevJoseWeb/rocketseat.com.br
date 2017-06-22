@@ -1,9 +1,23 @@
 .page-ebook-da-ideia-a-startup {
   $theme: #292C34;
 
+  #main-header .social-buttons {
+    margin-left: 20px;
+
+    a {
+      color: #FFF !important;
+    }
+  }
+
   @media all and (max-width: 900px) {
     #main-header {
       justify-content: center;
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    #main-header .social-buttons {
+      margin-left: 0;
     }
   }
 
@@ -125,6 +139,11 @@
 
     input {
       background-color: $white;
+    }
+
+    small {
+      margin-top: 15px;
+      color: #999;
     }
 
     button {
