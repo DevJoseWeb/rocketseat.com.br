@@ -3,7 +3,7 @@ layout: ebook
 class: page-ebook-da-ideia-a-startup confirmado
 logo: white
 title: Da ideia à startup
-description: "Baixar e-book: Da ideia à startup - o que todo programador precisa saber pra tidade a ideia do papel e dar vida à sua própria startup"
+description: "Baixar e-book: Da ideia à startup - o que todo programador precisa saber para tirar a ideia do papel e dar vida à sua própria startup"
 ---
 
 <div id="primary-content">
@@ -12,11 +12,15 @@ description: "Baixar e-book: Da ideia à startup - o que todo programador precis
   <section>
     <div class="container">
       <div class="content">
-        <h1>Parabéns, agora só falta um passo: ler</h1>
+        <h1>Parabéns, agora só faltam duas coisas: baixar e ler</h1>
 
-        <p>O e-book é só uma parte para garantir o sucesso da sua startup, por isso, postamos vários conteúdos no Youtube muito legais</p>
+        <strong>Se demorar pra receber o email, lembre de conferir sua caixa de spam. E qualquer problema que tiver só falar com a gente pelo email <a href="mailto:oi@rocketseat.com.br">oi@rocketseat.com.br</a></strong>
 
-        <a href="https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg" target="_blank" class="call-action">Acessar canal no Youtube!</a>
+        <p>Eu não vejo a hora de poder ouvir e compartilhar a sua história de sucesso. Mas até lá, essa pode ser uma jornada solitária. Por isso a gente criou uma comunidade no slack, onde você pode encontrar outros programadores iguais a você, com o mesmo propósito de tirar a ideia do papel e dar vida à própria startup. Para fazer parte dessa comunidade, basta clicar no link abaixo e solicitar o seu convite. E quando entrar lá, se apresenta contando um pouco da sua história para o resto do pessoal poder te conhecer. E a partir daí você pode contar com todos nós.</p>
+
+        <a href="https://join.slack.com/rocketseat/shared_invite/MTg5NzgzNjY3Nzc2LTE0OTYyMzQxNDctMWQ3ZmVkMDZkNg" class="call-action" target="_blank">Fazer parte da comunidade!</a>
+
+        <p>Pra se conectar ainda mais, não deixe de acompanhar a gente nas redes sociais.</p>
       </div>
 
       <div class="ebook">
