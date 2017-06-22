@@ -5,16 +5,13 @@
 ;
 
 @import
-  'libs/normalize',
-  'libs/syntax-highlighting'
+  'libs/normalize'
 ;
 
 @import
   'layouts/default',
-  'layouts/blog',
   'layouts/ebook',
-  'layouts/page',
-  'layouts/post'
+  'layouts/page'
 ;
 
 @import
@@ -26,15 +23,13 @@
   'partials/footer',
   'partials/social-buttons',
   'partials/subscriptions-out',
-  'partials/profiles',
-  'partials/temp',
+  'partials/pilots',
   'partials/form-default',
   'partials/faq'
 ;
 
 @import
   'scenes/404',
-  'scenes/about',
   'scenes/home',
   'scenes/jumpstart',
   'scenes/ebook-7-passos'

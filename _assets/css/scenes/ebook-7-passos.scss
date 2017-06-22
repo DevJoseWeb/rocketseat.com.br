@@ -20,7 +20,7 @@
         padding-bottom: 45px;
       }
 
-      @media all and (max-width: 980px) {
+      @media all and (max-width: 1070px) {
         .content {
           width: 100% !important;
         }
@@ -85,7 +85,7 @@
   }
 
   #description {
-    @extend .container;
+    @include container();
     @extend .article;
     text-align: center;
     font-size: 21px;

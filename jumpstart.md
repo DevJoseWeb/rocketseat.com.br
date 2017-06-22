@@ -19,7 +19,7 @@ class: page-jumpstart
   </div>
 </section>
 
-{% include profiles.html %}
+{% include pilots.html %}
 
 {% include faq.html %}
 

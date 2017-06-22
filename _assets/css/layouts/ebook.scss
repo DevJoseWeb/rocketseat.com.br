@@ -1,7 +1,8 @@
 .layout-ebook {
   #main-header {
-    .slack,
-    nav {
+    justify-content: flex-start;
+
+    .slack {
       display: none !important;
     }
   }

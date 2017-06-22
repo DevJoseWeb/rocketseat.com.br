@@ -12,25 +12,13 @@ $orange-dark: #AD772C;
 
 /* main vars */
 $base-font-family: 'PT Sans Narrow', Arial, sans-serif;
-$base-font-size:   18px;
-$small-font-size:  14px;
-$base-line-height: 1.6;
-
-$spacing-unit:     20px;
-
-$text-color:       $default;
-$background-color: $white;
-$brand-color:      $rocket;
 
 $main-color:       $default;
 $main-color-light: #999;
 $main-color-dark:  #333;
 
-$link-color:        #2A5DB0;
-$link-color-dark:   darken($link-color, 5%);
-
 $grey-color:       #999;
 $grey-color-light: lighten($grey-color, 26.5%);
 $grey-color-dark:  darken($grey-color, 40%);
 
-$content-width: 1100px;
+$content-width: 1070px;

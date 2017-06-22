@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-linkedin:before {
+  content: "\e906";
+}
 .icon-angle-down:before {
   content: "\e90f";
 }
@@ -62,7 +65,4 @@
 }
 .icon-github:before {
   content: "\e905";
-}
-.icon-linkedin:before {
-  content: "\e906";
 }

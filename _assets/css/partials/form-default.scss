@@ -1,6 +1,6 @@
 .form-default {
+  @include container();
   @extend .article;
-  @extend .container;
   width: 100%;
   max-width: 860px;
   padding-left: 20px;
@@ -42,7 +42,7 @@
       }
 
       &::placeholder {
-        color: lighten($default, 30);
+        color: lighten($main-color, 30);
       }
     }
   }

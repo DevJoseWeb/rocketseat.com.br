@@ -23,8 +23,8 @@ body {
   position: relative;
   z-index: 1;
 
-  color: $default;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  color: $main-color;
+  font-family: $base-font-family;
   font-style: normal;
   font-size: 18px;
   font-weight: 400;
@@ -45,7 +45,7 @@ input {
   &::selection {
     text-shadow: none;
     color: $black;
-    background: $default;
+    background: $main-color;
   }
 }
 
