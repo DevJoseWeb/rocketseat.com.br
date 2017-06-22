@@ -26,7 +26,7 @@ if (typeof trigger != 'undefined' && trigger.length && typeof input != 'undefine
   trigger.on('click', function(event) {
     event.preventDefault();
 
-    if ($(event.target).attr('href') == '#' || $(event.target).attr('href') == '') {
+    if ($(event.target).attr('href') == '#') {
       var delay = 500;
 
       setTimeout(function() {
