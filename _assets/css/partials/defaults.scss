@@ -30,6 +30,9 @@ body {
   font-weight: 400;
   letter-spacing: .01em;
   background-color: $white;
+
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
 }
 
 textarea,

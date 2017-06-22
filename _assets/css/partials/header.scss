@@ -2,7 +2,7 @@
   @include container();
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 30px 0;
 
   @media all and (max-width: 390px) {
@@ -54,11 +54,15 @@
   }
 
   .slack {
-    line-height: 1;
+    line-height: 25px;
     padding-left: 43px;
     border-left: 1px solid $grey-color-light;
     background: url(../img/icons/slack.svg) 12px center no-repeat;
     background-size: 25px auto;
+
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
   }
 
   #main-menu {
