@@ -12,8 +12,8 @@ description: "Baixar e-book: Da Ideia à Startup - o que todo programador precis
   <section>
     <div class="container">
       <div class="content">
-        <h1>7 coisas que te impedem de tirar a ideia do papel</h1>
-        <p>E as vantagens que fazem do programador a pessoa ideal para fundar uma startup</p>
+        <h1>O que te impede de tirar a ideia do papel?</h1>
+        <p>Descubra as vantagens que fazem do programador a pessoa ideal para fundar uma startup</p>
         <a href="#" class="call-action">Baixar grátis!</a>
       </div>
 
