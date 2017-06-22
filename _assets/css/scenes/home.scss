@@ -22,6 +22,40 @@
     text-align: center;
     background: url(../img/waves.png) $rocket top center repeat-x;
 
+    .container {
+      position: relative;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        @extend .icon;
+        color: #E14C4C;
+        font-size: 320px;
+      }
+
+      &:before {
+        content: "\e915";
+        top: 30px;
+        left: 0;
+        transform: translateX(-90%);
+        z-index: 0;
+      }
+
+      &:after {
+        content: "\e914";
+        bottom: -70px;
+        right: 0;
+        transform: translateX(130%);
+        z-index: 0;
+      }
+    }
+
+    h3, p {
+      position: relative;
+      z-index: 2;
+    }
+
     h3 {
       padding: 70px 0;
       font-size: 42px;
