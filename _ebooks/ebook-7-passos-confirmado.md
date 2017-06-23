@@ -1,4 +1,5 @@
 ---
+sitemap: false
 layout: ebook
 class: page-ebook-7-passos
 title: 7 passos para aprender a programar

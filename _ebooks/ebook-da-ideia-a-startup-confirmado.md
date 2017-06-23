@@ -1,4 +1,5 @@
 ---
+sitemap: false
 layout: ebook
 class: page-ebook-da-ideia-a-startup confirmado
 logo: white
