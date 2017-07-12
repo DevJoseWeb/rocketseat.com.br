@@ -1,5 +1,6 @@
 ---
 layout: default
+class: home
 ---
 
 <div id="page-home">
@@ -23,4 +24,18 @@ layout: default
   </section>
 
   {% include pilots.html %}
+
+  <section id="newsletter">
+    <div class="form-default">
+      <form action="http://hike.rocketseat.com.br/api/subscriptions" method="POST">
+        <p>Quer ficar por dentro de tudo que acontece na <strong>RocketSeat</strong>?</p>
+        <input placeholder="Deixe seu melhor e-mail" name="data[email]" type="email" required>
+        <input type="hidden" name="data[list_id]" value="10fb5e3e-2987-4c80-ae31-174e7b7c7cf9">
+        <input type="hidden" name="data[redirect_url]" value="http://rocketseat.com.br/inscricao-enviada.html">
+        <input type="hidden" name="data[confirm_redirect_url]" value="http://rocketseat.com.br/inscricao-confirmada.html">
+        <button class="call-action" type="submit">Receber novidades!</button>
+        <small>PS: Também não gostamos de spam ;)</small>
+      </form>
+    </div>
+  </section>
 </div>
