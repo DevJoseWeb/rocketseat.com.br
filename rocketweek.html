@@ -1,0 +1,91 @@
+---
+title: RocketWeek a revolução das linhas de código
+description: RocketWeek a revolução das linhas de código
+layout: blank
+class: page-rocketweek
+---
+
+<section id="primary">
+  <div class="container">
+    <div class="image">
+      <img class="revolution" src="{{ 'icons/revolution.svg' | asset_path }}"></img>
+    </div>
+
+    <div class="text">
+      <div class="title">
+        <h1>Rocket<b>Week</b></h1>
+        <p>a revolução das linhas de código</p>
+      </div>
+      <div class="content">
+        <p>Existe uma revolução acontecendo</p>
+        <p>E você programador é o maior protagonista dela</p>
+        <p>Mesmo que ainda nem saiba disso</p>
+
+        <div class="action">
+          <p>Workshop de 09/07 a 15/07 - 100% online e gratuito</p>
+          <a href="#" class="call-action">Junte-se à causa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="secondary">
+  <div class="container">
+    <h2>Você quer tirar sua ideia do papel e fundar sua startup?</h2>
+    <p>Durante essa semana vamos tratar sobre stack produtivas, empreendedorismo, marketing digital, investimento, sociedade e muito mais.</p>
+    <a href="#" class="call-action">Gostei, tô dentro</a>
+  </div>
+</section>
+
+<section id="cases">
+  <div class="container article">
+    <header>
+      <h3>Conheça algumas startups fundadas por programadores</h3>
+    </header>
+
+    <div class="content">
+      <article>
+        <img src="{{ 'inscricao/airbnb.png' | asset_path }}">
+        <h4>Waze</h4>
+        <p>Waze é um aplicativo móvel com estilo GPS para facilitar a comunicação no trânsito com informações de acidentes, radares, rotas mais rápidas, etc.</p>
+        <p>Waze é um aplicativo móvel com estilo GPS para facilitar a comunicação no trânsito com informações de acidentes, radares, rotas mais rápidas, etc.</p>
+      </article>
+      <article>
+        <img src="{{ 'inscricao/airbnb.png' | asset_path }}">
+        <h4>Waze</h4>
+        <p>Waze é um aplicativo móvel com estilo GPS para facilitar a comunicação no trânsito com informações de acidentes, radares, rotas mais rápidas, etc.</p>
+        <p>Waze é um aplicativo móvel com estilo GPS para facilitar a comunicação no trânsito com informações de acidentes, radares, rotas mais rápidas, etc.</p>
+      </article>
+      <article>
+        <img src="{{ 'inscricao/airbnb.png' | asset_path }}">
+        <h4>Waze</h4>
+        <p>Waze é um aplicativo móvel com estilo GPS para facilitar a comunicação no trânsito com informações de acidentes, radares, rotas mais rápidas, etc.</p>
+        <p>Waze é um aplicativo móvel com estilo GPS para facilitar a comunicação no trânsito com informações de acidentes, radares, rotas mais rápidas, etc.</p>
+      </article>
+    </div>
+
+    <footer>
+      <p>A sua pode ser a próxima!</p>
+      <a href="#" class="call-action">Quero fazer a diferença!</a>
+    </footer>
+  </div>
+</section>
+
+<div id="footer-container">
+  <section id="form">
+    <div class="form-default">
+      <form action="http://hike.rocketseat.com.br/api/subscriptions" method="POST">
+        <h3>Pré-lançamento</h3>
+        <p>Faça sua inscrição agora e não perca a chance de mudar sua carreira</p>
+        <input placeholder="Deixe seu melhor e-mail" name="data[email]" type="email" required>
+        <input type="hidden" name="data[list_id]" value="10fb5e3e-2987-4c80-ae31-174e7b7c7cf9">
+        <input type="hidden" name="data[redirect_url]" value="http://rocketseat.com.br/inscricao-enviada.html">
+        <input type="hidden" name="data[confirm_redirect_url]" value="http://rocketseat.com.br/inscricao-confirmada.html">
+        <button class="call-action" type="submit">Garantir minha vaga!</button>
+      </form>
+    </div>
+  </section>
+
+  {% include footer.html %}
+</div>

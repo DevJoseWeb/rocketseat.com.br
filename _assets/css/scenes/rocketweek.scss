@@ -1,0 +1,236 @@
+.page-rocketweek {
+  $theme: #282B34;
+
+  #primary {
+    position: relative;
+    padding: 100px 0;
+    color: $white;
+    background-color: $theme;
+    z-index: 1;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: 50%;
+      width: 708px;
+      height: 769px;
+      transform: translateX(-80%);
+      background: url(../img/code-bg-v2.png) center top no-repeat;
+      opacity: .2;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+
+      .image,
+      .text {
+        max-width: calc(50% - 25px);
+      }
+
+      .text {
+        margin-left: 50px;
+      }
+    }
+
+    .revolution {
+      height: 370px;
+    }
+
+    .title {
+      padding-bottom: 30px;
+
+      h1 {
+        font-size: 60px;
+
+        b {
+          color: $rocket;
+        }
+      }
+
+      p {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+
+    .content {
+      font-size: 20px;
+      line-height: 1.6;
+
+      .action {
+        width: 100%;
+        max-width: 350px;
+        padding-top: 50px;
+        font-size: 16px;
+        text-align: center;
+
+        a {
+          margin-top: 10px;
+          width: 100%;
+          font-size: 26px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  #secondary {
+    position: relative;
+    padding: 120px 0 70px 0;
+    margin-top: -50px;
+    color: $white;
+    text-align: center;
+    background: url(../img/waves.png) $rocket top center repeat-x;
+    z-index: 2;
+    overflow: hidden;
+
+    h2 {
+      font-size: 42px;
+    }
+
+    p {
+      font-size: 32px;
+      padding: 50px 0 30px 0;
+    }
+
+    a {
+      width: 100%;
+      max-width: 320px;
+      padding: 15px;
+      font-size: 26px;
+    }
+
+    .container {
+      position: relative;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        @extend .icon;
+        color: #E14C4C;
+        font-size: 320px;
+      }
+
+      &:before {
+        content: "\e915";
+        top: 30px;
+        left: 0;
+        transform: translateX(-90%);
+        z-index: 0;
+      }
+
+      &:after {
+        content: "\e914";
+        bottom: -70px;
+        right: 0;
+        transform: translateX(130%);
+        z-index: 0;
+      }
+    }
+  }
+
+  #cases {
+    .content {
+      display: flex;
+      justify-content: space-between;
+
+      article {
+        width: calc(33.33% - 40px);
+
+        &:not(&:first-child) {
+          margin-left: 20px;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 5px;
+        }
+
+        h4 {
+          font-size: 24px;
+          color: $black;
+          margin: 0;
+          padding: 20px 0;
+        }
+
+        p {
+          text-align: justify;
+          line-height: 1.6;
+          font-size: 20px;
+
+          &:not(:first-of-type) {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+
+    footer {
+      padding: 100px 0 50px 0;
+      text-align: center;
+
+      p {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .call-action {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px 0;
+        font-size: 30px;
+      }
+    }
+  }
+
+  #footer-container {
+    background: url(../img/space-bg.png) #2E2E38 top center no-repeat;
+
+    #form {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 31px;
+        background: url(../img/waves-dark.png) $white top center repeat-x;
+      }
+
+      form {
+        h3, p {
+          color: $white;
+        }
+
+        h3 {
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 24px;
+        }
+
+        input {
+          background-color: $white;
+        }
+
+        .call-action {
+          font-size: 30px;
+        }
+      }
+    }
+
+    #main-footer ul li a {
+      color: $white;
+    }
+  }
+}
