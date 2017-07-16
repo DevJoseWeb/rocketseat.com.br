@@ -233,4 +233,14 @@
       color: $white;
     }
   }
+
+  &.confirmada {
+    .social-buttons a {
+      color: $white;
+    }
+
+    #main-footer {
+      margin-top: 0;
+    }
+  }
 }
