@@ -7,6 +7,11 @@
     color: $white;
     background-color: $theme;
     z-index: 1;
+    text-align: center;
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:before {
       content: '';
@@ -26,15 +31,6 @@
       display: flex;
       justify-content: center;
       z-index: 1;
-
-      .image,
-      .text {
-        max-width: calc(50% - 25px);
-      }
-
-      .text {
-        margin-left: 50px;
-      }
     }
 
     .revolution {
@@ -45,7 +41,7 @@
       padding-bottom: 30px;
 
       h1 {
-        font-size: 60px;
+        font-size: 110px;
 
         b {
           color: $rocket;
@@ -59,15 +55,17 @@
     }
 
     .content {
-      font-size: 20px;
+      font-size: 24px;
       line-height: 1.6;
+      max-width: 600px;
 
       .action {
         width: 100%;
-        max-width: 350px;
+        max-width: 500px;
         padding-top: 50px;
         font-size: 16px;
         text-align: center;
+        margin: 0 auto;
 
         a {
           margin-top: 10px;
@@ -81,11 +79,10 @@
 
   #secondary {
     position: relative;
-    padding: 120px 0 70px 0;
-    margin-top: -50px;
+    padding: 80px 0;
     color: $white;
     text-align: center;
-    background: url(../img/waves.png) $rocket top center repeat-x;
+    background: $rocket;
     z-index: 2;
     overflow: hidden;
 
@@ -96,6 +93,7 @@
     p {
       font-size: 32px;
       padding: 50px 0 30px 0;
+      line-height: 1.6;
     }
 
     a {
@@ -162,7 +160,8 @@
         p {
           text-align: justify;
           line-height: 1.6;
-          font-size: 20px;
+          font-size: 14px;
+          font-family: Helvetica, Arial, sans-serif;
 
           &:not(:first-of-type) {
             margin-top: 20px;
@@ -203,7 +202,7 @@
         left: 0;
         width: 100%;
         height: 31px;
-        background: url(../img/waves-dark.png) $white top center repeat-x;
+        background: $white;
       }
 
       form {
@@ -227,6 +226,10 @@
           font-size: 30px;
         }
       }
+    }
+
+    #main-footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     #main-footer ul li a {
