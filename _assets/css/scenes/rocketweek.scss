@@ -8,10 +8,14 @@
     background-color: $theme;
     z-index: 1;
     text-align: center;
-    height: 98vh;
+    min-height: calc(100vh - 10px);
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 525px) {
+      padding: 50px 0;
+    }
 
     &:before {
       content: '';
@@ -29,12 +33,10 @@
     .container {
       position: relative;
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
       z-index: 1;
-    }
-
-    .revolution {
-      height: 370px;
     }
 
     .title {
@@ -42,6 +44,10 @@
 
       h1 {
         font-size: 110px;
+
+        @media screen and (max-width: 525px) {
+          font-size: 65px;
+        }
 
         b {
           color: $rocket;
@@ -51,6 +57,11 @@
       p {
         font-size: 30px;
         font-weight: bold;
+
+        @media screen and (max-width: 525px) {
+          font-size: 24px;
+        }
+
       }
     }
 
@@ -58,6 +69,10 @@
       font-size: 24px;
       line-height: 1.6;
       max-width: 600px;
+
+      @media screen and (max-width: 525px) {
+        font-size: 22px;
+      }
 
       .action {
         width: 100%;
@@ -88,12 +103,20 @@
 
     h2 {
       font-size: 42px;
+
+      @media screen and (max-width: 450px) {
+        font-size: 30px;
+      }
     }
 
     p {
       font-size: 32px;
       padding: 50px 0 30px 0;
       line-height: 1.6;
+
+      @media screen and (max-width: 450px) {
+        font-size: 22px;
+      }
     }
 
     a {
@@ -138,10 +161,36 @@
       display: flex;
       justify-content: space-between;
 
+      @media screen and (max-width: 500px) {
+        justify-content: center;
+        flex-direction: column;
+
+        article {
+          width: 100% !important;
+
+          &:not(:first-child) {
+            margin-left: 0!important;
+            margin-top: 30px;
+          }
+
+          h4 {
+            padding: 10px 0 !important;
+          }
+        }
+      }
+
       article {
         width: calc(33.33% - 40px);
 
-        &:not(&:first-child) {
+        @media screen and (max-width: 900px) and (min-width: 501px) {
+          width: calc(33.33% - 20px);
+
+          &:not(:first-child) {
+            margin-left: 10px;
+          }
+        }
+
+        &:not(:first-child) {
           margin-left: 20px;
         }
 
@@ -174,6 +223,10 @@
       padding: 100px 0 50px 0;
       text-align: center;
 
+      @media screen and (max-width: 500px) {
+        padding: 50px 0 0 0;
+      }
+
       p {
         font-size: 24px;
         font-weight: bold;
@@ -185,6 +238,10 @@
         max-width: 400px;
         padding: 10px 0;
         font-size: 30px;
+
+        @media screen and (max-width: 400px) {
+          font-size: 24px;
+        }
       }
     }
   }
@@ -206,6 +263,16 @@
       }
 
       form {
+        @media screen and (max-width: 620px) {
+          h3 {
+            font-size: 36px !important;
+          }
+
+          p {
+            font-size: 20px !important;
+          }
+        }
+
         h3, p {
           color: $white;
         }
