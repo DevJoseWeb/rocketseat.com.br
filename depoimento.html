@@ -17,8 +17,8 @@ description: Questionario
       <div class="content">
         <p>Essa pesquisa vai ajudar muito a definir o curso que estamos preparando e confirmar se estamos na direção certa. A partir daqui, o que você vai fazer é totalmente opcional. Se você acompanha a RocketSeat nas redes sociais ou faz parte da nossa comunidade no slack, eu gostaria de pedir um depoimento sincero do que você está achando dos nossos conteúdos:</p>
 
-        <input type="text" name="data[name]" placeholder="Seu nome">
-        <textarea name="data[body]" placeholder="Insira seu depoimento"></textarea>
+        <input type="text" name="data[name]" placeholder="Seu nome" required minlength="3">
+        <textarea name="data[body]" placeholder="Insira seu depoimento" required minlength="5"></textarea>
 
         <label class="terms">
           <input type="checkbox" name="data[visible]" value="true" checked>
