@@ -5,4 +5,10 @@ Disallow: /404
 Disallow: /ebook-7-passos-confirmado
 Disallow: /ebook-da-ideia-a-startup-confirmado
 
+Disallow: /inscricao-confirmada
+Disallow: /inscricao-enviada
+Disallow: /jumpstart
+Disallow: /rocketweek
+Disallow: /rocketweek-confirmada
+
 Sitemap: http://rocketseat.com.br/sitemap.xml
