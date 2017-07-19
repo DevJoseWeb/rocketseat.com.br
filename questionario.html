@@ -1,0 +1,88 @@
+---
+layout: simple
+class: page-questionario
+logo: white
+
+title: Questionario
+description: Questionario
+---
+
+<section id="questions">
+  <form action="http://hike.rocketseat.com.br/api/surveys" method="POST" class="container">
+    <article>
+      <header>
+        <h1>Qual a sua idade?</h1>
+      </header>
+
+      <div class="content">
+        <input rel="q1" type="hidden" name="data[answers[e7f84436-bbd2-4551-9f5e-0cb13a585d33]]" value="">
+
+        <ul class="trigger-list" rel="q1">
+          <li><button type="button" class="custom-radio"></button>até 17 anos</li>
+          <li><button type="button" class="custom-radio"></button>de 18 a 24 anos</li>
+          <li><button type="button" class="custom-radio"></button>de 25 a 34 anos</li>
+          <li><button type="button" class="custom-radio"></button>de 35 a 44 anos</li>
+          <li><button type="button" class="custom-radio"></button>de 45 a 54 anos</li>
+          <li><button type="button" class="custom-radio"></button>mais de 55 anos</li>
+        </ul>
+      </div>
+    </article>
+
+    <article>
+      <header>
+        <h1>Você é programador?</h1>
+      </header>
+
+      <div class="content">
+        <input rel="q2" type="hidden" name="data[answers[1098f62a-42d1-4c80-a6c0-097480202d5b]]" value="">
+
+        <ul class="trigger-list" rel="q2">
+          <li><button type="button" class="custom-radio"></button>Sim</li>
+          <li><button type="button" class="custom-radio"></button>Não</li>
+          <li><button type="button" class="custom-radio"></button>Aspirante</li>
+        </ul>
+      </div>
+    </article>
+
+    <article>
+      <header>
+        <h1>Você já tentou tirar a ideia do papel e fundar sua startup?</h1>
+      </header>
+
+      <div class="content">
+        <input rel="q3" type="hidden" name="data[answers[7182347d-d58f-4704-ac96-fee129edf8b5]]" value="">
+
+        <ul class="trigger-list" rel="q3">
+          <li><button type="button" class="custom-radio"></button>Sim</li>
+          <li><button type="button" class="custom-radio"></button>Não</li>
+        </ul>
+      </div>
+    </article>
+
+    <article>
+      <header>
+        <h1>Qual foi o desafio que te impediu de seguir em frente com a sua ideia?</h1>
+      </header>
+
+      <div class="content">
+        <textarea name="data[answers[18effb62-232c-4128-b930-a346f167eb90]]" placeholder="Insira sua resposta"></textarea>
+      </div>
+    </article>
+
+    <article>
+      <header>
+        <h1>Na sua opinião, em um curso que te mostrasse passo a passo como ir da ideia até a validação do seu negócio, o que não poderia faltar?</h1>
+      </header>
+
+      <div class="content">
+        <textarea name="answers[data[689bbd72-e857-4d1a-98a9-]5c5e4eb7bc8c]" placeholder="Insira sua resposta"></textarea>
+      </div>
+    </article>
+
+    <input type="hidden" name="data[survey_id]" value="bb577844-0dbf-4ee2-816c-6f6ced558b20">
+    <input type="hidden" name="data[email]" data-query="lead" value="">
+    <input type="hidden" name="data[redirect_url]" value="http://rocketseat.com.br/depoimento">
+
+    <button class="call-action" type="submit">Enviar questionário</button>
+  </form>
+</section>

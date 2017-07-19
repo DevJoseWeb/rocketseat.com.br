@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+{% include head.html %}
+
+<body class="layout-simple {{ page.class }}">
+  <header id="main-header">
+    <div id="logo-wrap">
+      {% include logo.html %}
+    </div>
+  </header>
+
+
+  {{ content }}
+
+  {% js main %}
+</body>
+
+</html>

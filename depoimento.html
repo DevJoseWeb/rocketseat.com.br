@@ -1,0 +1,35 @@
+---
+layout: simple
+class: page-questionario depoimento
+logo: white
+
+title: Questionario
+description: Questionario
+---
+
+<section id="questions">
+  <form action="http://hike.rocketseat.com.br/api/statements" method="POST" class="container">
+    <article>
+      <header>
+        <h1>Muito obrigado!</h1>
+      </header>
+
+      <div class="content">
+        <p>Essa pesquisa vai ajudar muito a definir o curso que estamos preparando e confirmar se estamos na direção certa. A partir daqui, o que você vai fazer é totalmente opcional. Se você acompanha a RocketSeat nas redes sociais ou faz parte da nossa comunidade no slack, eu gostaria de pedir um depoimento sincero do que você está achando dos nossos conteúdos:</p>
+
+        <input type="text" name="data[name]" placeholder="Seu nome">
+        <textarea name="answers[data[689bbd72-e857-4d1a-98a9-]5c5e4eb7bc8c]" placeholder="Insira seu depoimento"></textarea>
+
+        <label class="terms">
+          <input type="checkbox" name="data[visible]" value="true" checked>
+          <span>Termos de Divulgação: esse depoimento será utilizado em campanhas de marketing para que mais pessoas assim como você tenham acesso a esses conteúdos.</span>
+        </label>
+      </div>
+    </article>
+
+    <input type="hidden" name="data[email]" data-query="lead" value="">
+    <input type="hidden" name="data[redirect_url]" value="http://rocketseat.com.br/depoimento-obrigado">
+
+    <button class="call-action" type="submit">Enviar depoimento</button>
+  </form>
+</section>

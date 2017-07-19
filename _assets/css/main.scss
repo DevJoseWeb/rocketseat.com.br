@@ -11,7 +11,8 @@
 @import
   'layouts/default',
   'layouts/ebook',
-  'layouts/page'
+  'layouts/page',
+  'layouts/simple'
 ;
 
 @import
@@ -25,7 +26,8 @@
   'partials/subscriptions-out',
   'partials/pilots',
   'partials/form-default',
-  'partials/faq'
+  'partials/faq',
+  'partials/custom-radio'
 ;
 
 @import
@@ -36,5 +38,6 @@
   'scenes/ebook-7-passos',
   'scenes/ebook-da-ideia-a-startup',
   'scenes/inscricao-confirmada',
-  'scenes/rocketweek'
+  'scenes/rocketweek',
+  'scenes/questionario'
 ;
