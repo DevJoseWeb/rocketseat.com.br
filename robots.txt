@@ -10,5 +10,6 @@ Disallow: /inscricao-enviada
 Disallow: /jumpstart
 Disallow: /rocketweek
 Disallow: /rocketweek-confirmada
+Disallow: /rocketweek-videos
 
 Sitemap: http://rocketseat.com.br/sitemap.xml
