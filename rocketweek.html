@@ -2,7 +2,7 @@
 title: RocketWeek
 description: RocketWeek - Uma semana para descobrir como tirar a ideia do papel e dar vida à sua startup
 layout: blank
-class: page-rocketweek
+class: page-rocketweek-videos
 ---
 
 <section id="primary">
@@ -11,50 +11,99 @@ class: page-rocketweek
       <h1>Rocket<b>Week</b></h1>
       <p>Tire a ideia do papel e dê vida à sua startup</p>
     </div>
+  </div>
 
-    <div class="content">
-      <p>Uma semana para descobrir <b>o caminho que te leva da ideia à startup</b> da forma mais rápida e eficiente possível, diminuindo as incertezas e <b>aumentando as suas chances de sucesso</b>.</p>
-
-      <div class="action">
-        <p>De 24/07 a 30/07 <br> <strong>100% online e gratuito</strong></p>
-        <a href="#" class="call-action">Quero participar</a>
+  <div id="video-box" class="content">
+    <div class="video">
+      <div class="responsive-iframe">
+        <iframe src="https://www.youtube.com/embed/cgmN963YNEU?rel=0&amp;showinfo=0"frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="list">
+      <div id="video-1" class="box active" tabindex="0" data-id="cgmN963YNEU">
+        <div>
+          <p>Como começar</p>
+        </div>
+        <strong>24/07</strong>
+      </div>
+      <div id="video-2" class="box" disabled data-id=""> <!-- tabindex="1" -->
+        <div>
+          <p>Exemplos reais</p>
+          <span>Em breve</span>
+        </div>
+        <strong>26/07</strong>
+      </div>
+      <div id="video-3" class="box" disabled data-id=""> <!-- tabindex="2" -->
+        <div>
+          <p>As 5 etapas</p>
+          <span>Em breve</span>
+        </div>
+        <strong>28/07</strong>
+      </div>
+      <div id="video-4" class="box" disabled data-id=""> <!-- tabindex="3" -->
+        <div>
+          <p>Inscrições</p>
+          <span>Em breve</span>
+        </div>
+        <strong>31/07</strong>
       </div>
     </div>
   </div>
 </section>
 
-<section id="secondary">
+<section id="statements">
   <div class="container">
-    <h2>O que eu vou ver?</h2>
+    <h2>Veja o que estão falando da Rocket<b>Seat</b></h2>
 
-    <p>
-      Na jornada do empreendedor toda ajuda é bem-vinda. Mesmo quando você acredita que já está no caminho certo. Pensando nisso a gente preparou uma semana para falar de assuntos como: qual a melhor stack para o desenvolvimento do seu MVP. Como ter boas ideias para fundar sua startup. Como utilizar o marketing digital nas diferentes fases do seu negócio. E quais são as metodologias enxutas que vão te ajudar a confirmar se você está mesmo na direção certa.
-      <br>
-      <br>
-      Você vai conhecer ainda a história de programadores como eu e você que venceram as dificuldades de fundar uma startup e tiraram suas ideias do papel. E finalmente vai descobrir cada uma das etapas que te levam da ideia até a validação do seu negócio pelo caminho mais seguro, economizando tempo e esforço e aumentando suas chances de sucesso.
-    </p>
+    <div>
+      <blockquote>
+        <p>Todo conteúdo que recebo tem me ensinado bastante sobre como deve funcionar uma startup e seus pilares, e tem me ajudado a não perder o foco em meus projetos.</p>
+        <span>Adonai de Araújo</span>
+      </blockquote>
 
-    <br>
-    <a href="#" class="call-action">Garantir minha vaga</a>
+      <blockquote>
+        <p>Esses três caras estão conseguindo mais do que apenas criar guias para chegar lá, eles estão criando uma cultura. Essa cultura de que todos podem empreender e de que não existe atalho pra isso.</p>
+        <span>Douglas Haubert</span>
+      </blockquote>
+
+      <blockquote>
+        <p>Estou acompanhando há pouco tempo, mas tenho gostado bastante. Sou muito grato por compartilharem o conhecimento de vocês e buscarem ajudar as pessoas a tirar suas idéias do papel.</p>
+        <span>Lucas Fernandes</span>
+      </blockquote>
+
+      <blockquote>
+        <p>Eu vejo muitas pessoas com dificuldade de começar a criar o seu negócio, mas que bom que a RocketSeat está aí nessa empreitada. Quem sabe um dia não faça parte do time.</p>
+        <span>Fábio Badaró</span>
+      </blockquote>
+    </div>
+
+    <div id="slack-container">
+      <a href="https://join.slack.com/rocketseat/shared_invite/MjA2NTY5Mzk1OTU0LTE0OTg4NjAwMTAtYTY4YWYxY2FkMw" class="slack" target="_blank">
+        <span>Participar do canal no slack</span>
+      </a>
+    </div>
   </div>
 </section>
 
-{% include pilots.html %}
+<section id="comments">
+  <div class="container">
+    <br>
+
+    <div id="fb-comments">
+      <div class="fb-comments" data-href="http://rocketseat.com.br/rocketweek" data-width="100%" data-numposts="35" data-order-by="social"></div>
+    </div>
+  </div>
+</section>
 
 <div id="footer-container">
-  <section id="form">
-    <div class="form-default">
-      <form action="http://hike.rocketseat.com.br/api/subscriptions" method="POST">
-        <h3>Quero fundar minha startup!</h3>
-        <p>Faça sua inscrição agora mesmo e descubra como tirar sua ideia do papel</p>
-
-        <input placeholder="Deixe seu melhor e-mail" name="data[email]" type="email" required>
-        <input type="hidden" name="data[list_id]" value="b262411a-f393-4b4d-a39b-1b55fd2ced25">
-        <input type="hidden" name="data[redirect_url]" value="http://rocketseat.com.br/rocketweek-confirmada">
-        <button class="call-action" type="submit">Fazer inscrição grátis</button>
-      </form>
-    </div>
-  </section>
-
   {% include footer.html %}
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10&appId=115552259085317";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 </div>
