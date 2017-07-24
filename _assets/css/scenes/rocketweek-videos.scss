@@ -25,6 +25,16 @@
         font-size: 24px;
         font-weight: bold;
       }
+
+      @media screen and (max-width: 420px) {
+        h1 {
+          font-size: 68px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
     }
 
     .container {
@@ -56,13 +66,27 @@
           justify-content: space-around;
           width: 100%;
           height: calc(100% / 4);
-          padding: 10px 0;
+          padding: 10px;
           font-weight: bold;
           box-shadow: 0 0 3px rgba(#000000, .5);
           transition: all linear 150ms;
           cursor: pointer;
           outline: none;
           user-select: none;
+
+          @media screen and (max-width: 350px) {
+            padding: 10px 6px !important;
+
+            &:last-child {
+              > div {
+                margin-top: 5px;
+              }
+
+              strong {
+                margin-top: 16px;
+              }
+            }
+          }
 
           &.active,
           &:hover,
@@ -131,9 +155,7 @@
       @media screen and (max-width: 530px) {
         .list {
           p {
-            &:before {
-              content: '#';
-            }
+            font-size: 14px !important;
 
             b {
               display: none;
@@ -238,47 +260,6 @@
           }
         }
       }
-
-      #slack-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 20px;
-
-        .slack {
-          height: 40px;
-          line-height: 40px;
-          padding-left: 40px;
-          margin: 20px 0;
-          background: url(../img/icons/slack.svg) 0 center no-repeat;
-          background-size: 35px auto;
-          color: $main-color-dark;
-          font-size: 20px;
-          font-weight: bold;
-          font-family: Arial, sans-serif;
-
-          &:hover,
-          &:focus {
-            text-decoration: none;
-          }
-        }
-      }
-
-      .comentarios-slack {
-        padding: 20px;
-        border: 1px solid #EEE;
-        border-radius: 3px;
-        justify-content: center;
-
-        @media screen and (max-width: 460px) {
-          padding: 0;
-          border: 0;
-        }
-
-        img {
-          max-width: 100%;
-        }
-      }
     }
   }
 
@@ -292,6 +273,63 @@
         text-align: center;
         padding: 50px 0;
         font-size: 42px;
+      }
+    }
+  }
+
+  #slack-statements {
+    .container {
+      h2 {
+        color: $black;
+        text-align: center;
+        padding: 60px 0 20px 0;
+        font-size: 42px;
+
+        b {
+          color: $rocket;
+        }
+      }
+    }
+
+    #slack-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 20px;
+
+      .slack {
+        height: 40px;
+        line-height: 40px;
+        padding-left: 40px;
+        margin: 20px 0;
+        background: url(../img/icons/slack.svg) 0 center no-repeat;
+        background-size: 35px auto;
+        color: $main-color-dark;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .comentarios-slack {
+      padding: 20px;
+      border: 1px solid #EEE;
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+
+      @media screen and (max-width: 460px) {
+        padding: 0;
+        border: 0;
+      }
+
+      img {
+        max-width: 100%;
       }
     }
   }
