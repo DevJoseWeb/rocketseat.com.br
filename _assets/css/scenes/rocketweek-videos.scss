@@ -243,7 +243,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 50px 0 0 0;
+        padding-bottom: 20px;
 
         .slack {
           height: 40px;
@@ -261,6 +261,22 @@
           &:focus {
             text-decoration: none;
           }
+        }
+      }
+
+      .comentarios-slack {
+        padding: 20px;
+        border: 1px solid #EEE;
+        border-radius: 3px;
+        justify-content: center;
+
+        @media screen and (max-width: 460px) {
+          padding: 0;
+          border: 0;
+        }
+
+        img {
+          max-width: 100%;
         }
       }
     }
