@@ -96,7 +96,7 @@ $('*[data-query]').each(function() {
  * Videos RocketWeek
  */
 var videoPrefix = 'https://www.youtube.com/embed/';
-var videoSufix = '?rel=0&amp;controls=0&amp;showinfo=0';
+var videoSufix = '?rel=0&amp;showinfo=0';
 var scrollPosition = 0;
 
 // Verifica o hash e dispara um trigger no box do video
