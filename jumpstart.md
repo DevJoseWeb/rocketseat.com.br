@@ -129,8 +129,10 @@ class: page-jumpstart
 
     <div class="slack">
       <img src="{{ 'jumpstart/slack.svg' | asset_path }}" alt="Mentoria e suporte dedicado">
-      <h3>Mentoria e suporte dedicado</h3>
-      <p>Ficou com dúvida em <b>qualquer parte do curso</b> Jumpstart ou nos cursos bônus? Tenha acesso à <b>mentoria</b> dos pilotos <b>sempre que precisar</b>. Se tornando um aluno do Jumpstart você terá acesso ao <b>canal privado</b> para alunos no Slack com conteúdos e discussões exclusivas e ao <b>suporte 1-1 via Slack e voz/vídeo</b></p>
+      <div>
+        <h3>Mentoria e suporte dedicado</h3>
+        <p>Ficou com dúvida em <b>qualquer parte do curso</b> Jumpstart ou nos cursos bônus? Tenha acesso à <b>mentoria</b> dos pilotos <b>sempre que precisar</b>. Se tornando um aluno do Jumpstart você terá acesso ao <b>canal privado</b> para alunos no Slack com conteúdos e discussões exclusivas e ao <b>suporte 1-1 via Slack e voz/vídeo</b></p>
+      </div>
     </div>
   </div>
 </section>
@@ -138,9 +140,9 @@ class: page-jumpstart
 <section id="garantia">
   <div class="container">
     <img src="{{ 'jumpstart/selo.svg' | asset_path }}" alt="Garantia de 30 dias">
-    <div class="box">
+    <div>
       <h2>Garantia total de 30 dias!</h2>
-      <p>Se você iniciar o curso Jumpstart e por qualquer razão perceber que o curso não é para você, não importa o motivo. Você tem 30 dias a partir do início das aulas para enviar um e-mail para nós sem justificativa nenhuma para receber 100% do seu dinheiro de volta. Além disso, ninguém irá te ligar ou perguntar o motivo do cancelamento ou tentar te convencer do contrário</p>
+      <p>Se você iniciar o curso Jumpstart e por <b>qualquer razão</b> perceber que o curso não é para você, não importa o motivo. Você tem <b>30 dias</b> a partir do início das aulas para enviar um e-mail para nós <b>sem nenhuma justificativa</b> para receber <b>100% do seu dinheiro de volta</b>. Além disso, <b>ninguém irá te ligar ou perguntar</b> o motivo do cancelamento ou tentar te convencer do contrário.</p>
     </div>
   </div>
 </section>
@@ -150,8 +152,10 @@ class: page-jumpstart
 {% include faq.html %}
 
 <section id="final">
-  <h2>Pronto para tirar sua ideia do papel e fundar sua startup?</h2>
-  <button class="call-action" type="button">Garantir minha vaga</button>
+  <div class="container">
+    <h2>Pronto para tirar sua ideia do papel e fundar sua startup?</h2>
+    <button class="call-action" type="button">Garantir minha vaga</button>
+  </div>
 </section>
 
 <div id="footer-container">
