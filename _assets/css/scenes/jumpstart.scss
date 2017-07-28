@@ -492,4 +492,178 @@
       color: $white;
     }
   }
+
+  #modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($black, .8);
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity linear 150ms;
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+      z-index: 100;
+    }
+
+    #modal-content {
+      position: relative;
+      width: 100%;
+      max-width: 440px;
+      max-height: calc(100vh - 20px);
+      padding: 20px;
+      overflow-y: auto;
+      border-radius: 3px;
+      background-color: $white;
+
+      h2 {
+        font-weight: normal;
+        font-size: 38px;
+        margin: 20px 0 50px 0;
+        text-align: center;
+        color: $main-color-dark;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      input {
+        margin-bottom: 10px;
+        font-size: 20px;
+        border: 1px solid $main-color-light;
+        border-radius: 3px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 15px;
+      }
+
+      .call-action {
+        padding: 10px 0;
+        font-size: 28px;
+      }
+
+      span {
+        font-size: 14px;
+        color: $main-color-light;
+        text-align: center;
+        padding: 10px 0 20px 0;
+      }
+
+      .selo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        color: $white;
+        background-color: $rocket;
+
+        img {
+          height: 100px;
+          margin-right: 20px;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+        }
+
+        h3 {
+          font-size: 22px;
+          text-transform: uppercase;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      #close-modal {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 10px;
+        width: 12px;
+        height: 12px;
+        line-height: 10px;
+        text-align: center;
+        color: $main-color-light;
+        transition: all linear 150ms;
+        border: 1px solid $main-color-light;
+        border-radius: 50%;
+
+        &:hover,
+        &:focus {
+          color: $main-color-dark;
+          border-color: $main-color-dark;
+          text-decoration: none;
+        }
+      }
+
+      @media screen and (max-width: 460px) {
+        max-width: calc(100vw - 20px);
+
+        h2 {
+          font-size: 26px;
+          margin-bottom: 30px;
+        }
+
+        input {
+          font-size: 18px;
+        }
+
+        span {
+          font-size: 13px;
+        }
+
+        .selo {
+          display: block;
+          position: relative;
+
+          img {
+            height: 50px;
+          }
+
+          div {
+            &:before,
+            &:after {
+              font-size: 22px;
+              text-transform: uppercase;
+              font-weight: bold;
+              position: absolute;
+              left: 80px;
+            }
+
+            &:before {
+              content: 'Garantia total';
+              top: 20px;
+            }
+
+            &:after {
+              content: 'de 30 dias';
+              top: 45px;
+            }
+
+            h3 {
+              display: none;
+            }
+
+            p {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

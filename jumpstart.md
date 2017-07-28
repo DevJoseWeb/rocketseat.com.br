@@ -23,7 +23,7 @@ class: page-jumpstart
     </div>
     <footer>
       <span>* Assista o vídeo até o fim para conferir todos os detalhes do curso</span>
-      <button type="button" class="call-action">Garantir minha vaga</button>
+      <button type="button" class="call-action open-modal">Garantir minha vaga</button>
     </footer>
   </div>
 </section>
@@ -154,9 +154,34 @@ class: page-jumpstart
 <section id="final">
   <div class="container">
     <h2>Pronto para tirar sua ideia do papel e fundar sua startup?</h2>
-    <button class="call-action" type="button">Garantir minha vaga</button>
+    <button class="call-action open-modal" type="button">Garantir minha vaga</button>
   </div>
 </section>
+
+<div id="modal">
+  <div id="modal-content">
+    <h2>Falta apenas um passo para <b>tirar sua ideia do papel!</b></h2>
+
+    <form action="" method="post">
+      <input type="text" name="data[name]" placeholder="Digite seu nome">
+      <input type="email" name="data[email]" placeholder="E-mail">
+      <input type="text" name="data[phone]" placeholder="Telefone">
+
+      <button type="submit" class="call-action">Avançar</button>
+      <span>Você será redirecionado para o ambiente do PagSeguro.</span>
+    </form>
+
+    <div class="selo">
+      <img src="{{ 'jumpstart/selo.svg' | asset_path }}" alt="Garantia de 30 dias">
+      <div>
+        <h3>Garantia total de 30 dias</h3>
+        <p>Se por qualquer razão decidir que o curso não é para você, basta nos enviar um e-mail que devolvemos seu dinheiro.</p>
+      </div>
+    </div>
+
+    <button type="button" id="close-modal">x</button>
+  </div>
+</div>
 
 <div id="footer-container">
   {% include footer.html %}

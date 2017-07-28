@@ -153,3 +153,13 @@ window.onhashchange = function() {
     window.scrollTo(0, scrollPosition);
   }, 1);
 };
+
+// abre modal
+$('.open-modal').on('click', function() {
+  $('#modal').addClass('active');
+});
+
+// fecha o modal
+$('#close-modal').on('click', function() {
+  $('#modal').removeClass('active');
+});
