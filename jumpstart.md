@@ -3,6 +3,9 @@ title: Jumpstart
 description: Jumpstart - Tire sua ideia do papel e dê vida à sua startup
 layout: blank
 class: page-jumpstart
+redirect_from:
+  - /rocketweek
+  - /rocketweek-inscricao
 ---
 
 <section id="primary">

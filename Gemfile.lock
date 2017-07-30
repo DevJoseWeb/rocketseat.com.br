@@ -43,6 +43,8 @@ GEM
       em-websocket (~> 0.5)
       jekyll (~> 3.0)
     jekyll-paginate (1.1.0)
+    jekyll-redirect-from (0.12.1)
+      jekyll (~> 3.3)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-sitemap (0.12.0)
@@ -82,6 +84,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-livereload
   jekyll-paginate
+  jekyll-redirect-from
   jekyll-sitemap
   mini_magick
   minima (~> 2.0)
