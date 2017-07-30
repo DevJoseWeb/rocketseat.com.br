@@ -1,6 +1,6 @@
 ---
 title: Jumpstart
-description: Jumpstart - Tire seua ideia do papel e dar vida à sua startup
+description: Jumpstart - Tire sua ideia do papel e dê vida à sua startup
 layout: blank
 class: page-jumpstart
 ---
@@ -8,7 +8,7 @@ class: page-jumpstart
 <section id="primary">
   <div class="container">
     <header>
-      <a href="{{ site.baseurl }}/" class="logo" title="Conhecer a rocketseat">
+      <a href="{{ site.baseurl }}/" class="logo" title="Conhecer a RocketSeat">
         <img src="{{ 'rocket.svg' | asset_path }}" alt=""/>
         <img src="{{ 'rocketseat-white.svg' | asset_path }}" title="{{ site.name }} | {{ site.title }}" alt="{{ site.name }} | {{ site.title }}"/>
       </a>
@@ -23,7 +23,7 @@ class: page-jumpstart
     </div>
     <footer>
       <span>* Assista o vídeo até o fim para conferir todos os detalhes do curso</span>
-      <button type="button" class="call-action open-modal">Garantir minha vaga</button>
+      <button type="button" class="call-action open-modal">Garantir minha vaga!</button>
     </footer>
   </div>
 </section>
@@ -58,20 +58,21 @@ class: page-jumpstart
 
 <section id="modulos">
   <div class="container">
-    <h2>Módulos do curso Jumpstart</h2>
+    <h2>Módulos do Jumpstart</h2>
 
     <div id="timeline">
       <div class="track">
         <span></span>
         <div>
           <h3>Módulo 01: Ideação</h3>
-          <p>Nesse módulo você vai criar o seu canvas, entender os propósitos do seu pitch, descobrir como ter boas ideias, e entender qual o primeiro passo que você precisa dar para criar sua startup</p>
+          <p>Nesse momento seu negócio está apenas no campo dos achismos. Mesmo que você já tenha uma aplicação no ar, suas hipóteses ainda não foram confirmadas. Aqui você irá levantar o maior número de informações possível a respeito do seu negócio, preenchendo a primeira versão do seu canvas.
+          </p>
         </div>
       </div>
       <div class="track">
         <div>
           <h3>Módulo 02: Descobrimento</h3>
-          <p>Nesse módulo você vai criar o seu canvas, entender os propósitos do seu pitch, descobrir como ter boas ideias, e entender qual o primeiro passo que você precisa dar para criar sua startup</p>
+          <p>Aqui é o momento de ir pra rua, se colocar no lugar do cliente, fazer entrevistas e entender qual é exatamente o problema que você está resolvendo. A ideia é validar todas as hipóteses levantadas durante o processo de ideação, e ter clareza sobre qual é o trabalho que precisa ser feito.</p>
         </div>
         <span></span>
       </div>
@@ -79,13 +80,14 @@ class: page-jumpstart
         <span></span>
         <div>
           <h3>Módulo 03: Solução</h3>
-          <p>Nesse módulo você vai criar o seu canvas, entender os propósitos do seu pitch, descobrir como ter boas ideias, e entender qual o primeiro passo que você precisa dar para criar sua startup</p>
+          <p>Nesse momento você irá definir qual é a melhor maneira de resolver o problema que validou, preparando e testando a oferta com base na sua proposta de valor. Itens como a persona, a jornada do consumidor e até o modelo de receita já devem estar claros a essa altura.
+          </p>
         </div>
       </div>
       <div class="track">
         <div>
           <h3>Módulo 04: Desenvolvimento</h3>
-          <p>Nesse módulo você vai criar o seu canvas, entender os propósitos do seu pitch, descobrir como ter boas ideias, e entender qual o primeiro passo que você precisa dar para criar sua startup</p>
+          <p>Somente a partir daqui é que você irá começar a trabalhar no seu MVP. Nesse ponto sua ideia já sofreu inúmeras alterações, e a maioria das suas hipóteses já devem ter sido confirmadas. Então esse é o momento de focar no que realmente entrega valor para o seu cliente.</p>
         </div>
         <span></span>
       </div>
@@ -93,7 +95,8 @@ class: page-jumpstart
         <span></span>
         <div>
           <h3>Módulo 05: Validação</h3>
-          <p>Nesse módulo você vai criar o seu canvas, entender os propósitos do seu pitch, descobrir como ter boas ideias, e entender qual o primeiro passo que você precisa dar para criar sua startup</p>
+          <p>Aqui a missão é confirmar que sua solução realmente cura a dor do cliente, a ponto dele estar disposto a pagar por ela. E uma vez que as pessoas comprem e recomprem seu produto, você estará pronto para ir para o próximo nível.
+          </p>
         </div>
       </div>
     </div>
@@ -128,10 +131,10 @@ class: page-jumpstart
     </div>
 
     <div class="slack">
-      <img src="{{ 'jumpstart/slack.svg' | asset_path }}" alt="Mentoria e suporte dedicado">
+      <img src="{{ 'jumpstart/slack.svg' | asset_path }}" alt="Mentoria e suporte">
       <div>
-        <h3>Mentoria e suporte dedicado</h3>
-        <p>Ficou com dúvida em <b>qualquer parte do curso</b> Jumpstart ou nos cursos bônus? Tenha acesso à <b>mentoria</b> dos pilotos <b>sempre que precisar</b>. Se tornando um aluno do Jumpstart você terá acesso ao <b>canal privado</b> para alunos no Slack com conteúdos e discussões exclusivas e ao <b>suporte 1-1 via Slack e voz/vídeo</b></p>
+        <h3>Mentoria e suporte</h3>
+        <p>Ficou com dúvida em <b>qualquer parte do Jumpstart</b> ou nos cursos bônus? Tenha acesso à <b>mentoria</b> dos pilotos <b>sempre que precisar</b>. Se tornando um aluno do Jumpstart você terá acesso ao <b>canal privado</b> com discussões exclusivas e <b>suporte 1-1</b>.</p>
       </div>
     </div>
   </div>
@@ -142,7 +145,7 @@ class: page-jumpstart
     <img src="{{ 'jumpstart/selo.svg' | asset_path }}" alt="Garantia de 30 dias">
     <div>
       <h2>Garantia total de 30 dias!</h2>
-      <p>Se você iniciar o curso Jumpstart e por <b>qualquer razão</b> perceber que o curso não é para você, não importa o motivo. Você tem <b>30 dias</b> a partir do início das aulas para enviar um e-mail para nós <b>sem nenhuma justificativa</b> para receber <b>100% do seu dinheiro de volta</b>. Além disso, <b>ninguém irá te ligar ou perguntar</b> o motivo do cancelamento ou tentar te convencer do contrário.</p>
+      <p>Ao se inscrever no Jumpstart e por <b>qualquer razão</b> perceber que o curso não é para você, não importa o motivo. Você tem <b>30 dias</b> a partir do início das aulas para nos enviar um e-mail <b>sem nenhuma justificativa</b> e receber <b>100% do seu dinheiro de volta</b>. Além disso, <b>ninguém irá te ligar ou perguntar</b> o motivo do cancelamento nem tentar te convencer do contrário.</p>
     </div>
   </div>
 </section>
@@ -162,10 +165,13 @@ class: page-jumpstart
   <div id="modal-content">
     <h2>Falta apenas um passo para <b>tirar sua ideia do papel!</b></h2>
 
-    <form action="" method="post">
-      <input type="text" name="data[name]" placeholder="Digite seu nome">
-      <input type="email" name="data[email]" placeholder="E-mail">
-      <input type="text" name="data[phone]" placeholder="Telefone">
+    <form action="http://hike.rocketseat.com.br/api/payments" method="post">
+      <input type="text" name="data[name]" placeholder="Digite seu nome" required>
+      <input type="email" name="data[email]" placeholder="E-mail" required>
+      <input type="tel" name="data[phone]" placeholder="Telefone" required>
+
+      <input type="hidden" name="data[redirect_success_url]" value="http://rocketseat.com.br/jumpstart-obrigado">
+      <input type="hidden" name="data[redirect_error_url]" value="http://rocketseat.com.br/jumpstart-erro">
 
       <button type="submit" class="call-action">Avançar</button>
       <span>Você será redirecionado para o ambiente do PagSeguro.</span>
@@ -175,7 +181,7 @@ class: page-jumpstart
       <img src="{{ 'jumpstart/selo.svg' | asset_path }}" alt="Garantia de 30 dias">
       <div>
         <h3>Garantia total de 30 dias</h3>
-        <p>Se por qualquer razão decidir que o curso não é para você, basta nos enviar um e-mail que devolvemos seu dinheiro.</p>
+        <p>Se por qualquer razão você decidir que não gostou do curso, basta nos enviar um e-mail e devolvemos o seu dinheiro.</p>
       </div>
     </div>
 

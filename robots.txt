@@ -8,6 +8,8 @@ Disallow: /ebook-da-ideia-a-startup-confirmado
 Disallow: /inscricao-confirmada
 Disallow: /inscricao-enviada
 Disallow: /jumpstart
+Disallow: /jumpstart-obrigado
+Disallow: /jumpstart-erro
 Disallow: /rocketweek
 Disallow: /rocketweek-inscricao
 Disallow: /rocketweek-confirmada
