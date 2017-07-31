@@ -119,7 +119,7 @@ redirect_from:
       <div>
         <img src="{{ 'jumpstart/laravel_api.svg' | asset_path }}" alt="REST API com Laravel</h3">
         <h3>REST API com Laravel</h3>
-        <p>Aprenda a criar uma API REST do zero para servir de endpoint para ablicações web e mobile</p>
+        <p>Aprenda a criar uma API REST do zero para servir de endpoint para aplicações web e mobile</p>
       </div>
       <div>
         <img src="{{ 'jumpstart/vue.svg' | asset_path }}" alt="Aplicações web com VueJS">
