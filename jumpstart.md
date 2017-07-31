@@ -21,7 +21,7 @@ redirect_from:
     </header>
     <div id="video-container">
       <div class="responsive-iframe">
-        <iframe src="https://www.youtube.com/embed/i6iK9p8BZkg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/i6iK9p8BZkg?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
     <footer>
