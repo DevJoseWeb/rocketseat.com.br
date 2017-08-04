@@ -1,8 +1,12 @@
 ---
-title: Jumpstart
-description: Jumpstart - Tire sua ideia do papel e dê vida à sua startup
+title: Jumpstart - Inscrições encerradas
+description: Jumpstart - As inscrições estão encerradas encerradas, quer entrar na fila de espera?
 layout: blank
-class: page-jumpstart
+class: page-jumpstart-fila
+redirect_from:
+  - /jumpstart
+  - /rocketweek
+  - /rocketweek-inscricao
 ---
 
 <section id="primary">
@@ -16,14 +20,10 @@ class: page-jumpstart
         <img src="{{ 'jumpstart/logo.svg' | asset_path }}" alt="curso Jumpstart">
       </a>
     </header>
-    <div id="video-container">
-      <div class="responsive-iframe">
-        <iframe src="https://www.youtube.com/embed/i6iK9p8BZkg?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
     <footer>
-      <span>* Assista o vídeo até o fim para conferir todos os detalhes do curso</span>
-      <button type="button" class="call-action open-modal">Garantir minha vaga!</button>
+      <h2>As inscrições estão encerradas!</h2>
+      <span>Cadastre-se abaixo para entrar na lista de espera e você será avisado quando abrir a próxima turma</span>
+      <button type="button" class="call-action open-modal">Entrar na fila de espera</button>
     </footer>
   </div>
 </section>
@@ -103,53 +103,6 @@ class: page-jumpstart
   </div>
 </section>
 
-<section id="bonus">
-  <div class="container">
-    <h2>Bônus</h2>
-
-    <div class="list">
-      <div>
-        <img src="{{ 'jumpstart/laravel.svg' | asset_path }}" alt="Curso completo de Laravel">
-        <h3>Curso completo de Laravel</h3>
-        <p>Aprenda todos os conceitos do framework web mais utilizado atualmente em PHP</p>
-      </div>
-      <div>
-        <img src="{{ 'jumpstart/laravel_api.svg' | asset_path }}" alt="REST API com Laravel</h3">
-        <h3>REST API com Laravel</h3>
-        <p>Aprenda a criar uma API REST do zero para servir de endpoint para aplicações web e mobile</p>
-      </div>
-      <div>
-        <img src="{{ 'jumpstart/vue.svg' | asset_path }}" alt="Aplicações web com VueJS">
-        <h3>Aplicações web com VueJS</h3>
-        <p>Entenda conceitos de SPA e crie uma aplicação do zero utilizando o framework VueJS</p>
-      </div>
-      <div>
-        <img src="{{ 'jumpstart/react.svg' | asset_path }}" alt="Mobile com React Native">
-        <h3>Mobile com React Native</h3>
-        <p>Domine a ferramenta criada pelo Facebook para criação de apps mobile em iOS e Android</p>
-      </div>
-    </div>
-
-    <div class="slack">
-      <img src="{{ 'jumpstart/slack.svg' | asset_path }}" alt="Mentoria e suporte">
-      <div>
-        <h3>Mentoria e suporte</h3>
-        <p>Ficou com dúvida em <b>qualquer parte do Jumpstart</b> ou nos cursos bônus? Tenha acesso à <b>mentoria</b> dos pilotos <b>sempre que precisar</b>. Se tornando um aluno do Jumpstart você terá acesso ao <b>canal privado</b> com discussões exclusivas e <b>suporte 1-1</b>.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="garantia">
-  <div class="container">
-    <img src="{{ 'jumpstart/selo.svg' | asset_path }}" alt="Garantia de 30 dias">
-    <div>
-      <h2>Garantia total de 30 dias!</h2>
-      <p>Ao se inscrever no Jumpstart e por <b>qualquer razão</b> perceber que o curso não é para você, não importa o motivo. Você tem <b>30 dias</b> a partir do início das aulas para nos enviar um e-mail <b>sem nenhuma justificativa</b> e receber <b>100% do seu dinheiro de volta</b>. Além disso, <b>ninguém irá te ligar ou perguntar</b> o motivo do cancelamento nem tentar te convencer do contrário.</p>
-    </div>
-  </div>
-</section>
-
 {% include pilots.html %}
 
 {% include faq.html %}
@@ -157,33 +110,20 @@ class: page-jumpstart
 <section id="final">
   <div class="container">
     <h2>Pronto para tirar sua ideia do papel e fundar sua startup?</h2>
-    <button class="call-action open-modal" type="button">Garantir minha vaga</button>
+    <button class="call-action open-modal" type="button">Entrar na fila de espera</button>
   </div>
 </section>
 
 <div id="modal">
   <div id="modal-content">
-    <h2>Falta apenas um passo para <b>tirar sua ideia do papel!</b></h2>
+    <h2>Deixe seu e-mail e te avisamos quando a próxima turma abrir</h2>
 
-    <form action="http://hike.rocketseat.com.br/api/payments" method="post">
-      <input type="text" name="data[name]" placeholder="Digite seu nome" required>
-      <input type="email" name="data[email]" placeholder="E-mail" required>
-      <input type="tel" name="data[phone]" placeholder="Telefone" required>
-
-      <input type="hidden" name="data[redirect_success_url]" value="http://rocketseat.com.br/jumpstart-obrigado">
-      <input type="hidden" name="data[redirect_error_url]" value="http://rocketseat.com.br/jumpstart-erro">
-
-      <button type="submit" class="call-action">Avançar</button>
-      <span>Você será redirecionado para o ambiente do PagSeguro.</span>
+    <form action="http://hike.rocketseat.com.br/api/subscriptions" method="POST">
+      <input placeholder="Deixe seu melhor e-mail" name="data[email]" type="email" required>
+      <input type="hidden" name="data[list_id]" value="90874765-d19d-427f-82d2-164e73811891">
+      <input type="hidden" name="data[redirect_url]" value="http://rocketseat.com.br/jumpstart-fila-obrigado">
+      <button class="call-action" type="submit">Entrar na fila de espera</button>
     </form>
-
-    <div class="selo">
-      <img src="{{ 'jumpstart/selo.svg' | asset_path }}" alt="Garantia de 30 dias">
-      <div>
-        <h3>Garantia total de 30 dias</h3>
-        <p>Se por qualquer razão você decidir que não gostou do curso, basta nos enviar um e-mail e devolvemos o seu dinheiro.</p>
-      </div>
-    </div>
 
     <button type="button" id="close-modal">x</button>
   </div>
