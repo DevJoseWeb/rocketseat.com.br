@@ -113,7 +113,6 @@ $(document).ready(function() {
   }
 });
 
-
 // Troca o url do iframe do video pelo data-id e altera o location.hash
 function accessVideo(obj) {
   if (!obj.hasClass('box')) {
