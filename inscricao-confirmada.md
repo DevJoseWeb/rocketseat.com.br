@@ -13,7 +13,7 @@ title: Inscrição confirmada
       <div class="content">
         <h1>Tudo pronto!</h1>
         <br/>
-        <p>A partir de agora você vai ficar por dentro das coisas que estamos aprontando, não deixe de <strong><a href="https://join.slack.com/rocketseat/shared_invite/MjA2NTY5Mzk1OTU0LTE0OTg4NjAwMTAtYTY4YWYxY2FkMw" target="_blank">entrar no slack</a></strong> pra participar da comunidade e aproveita pra dar uma olhada nos conteúdos que a gente compartilha nas redes sociais...</p>
+        <p>A partir de agora você vai ficar por dentro das coisas que estamos aprontando, não deixe de <strong><a href="http://slack.rocketseat.com.br" target="_blank">entrar no slack</a></strong> pra participar da comunidade e aproveita pra dar uma olhada nos conteúdos que a gente compartilha nas redes sociais...</p>
         <br/>
         {% include social-buttons.html %}
         <p>
