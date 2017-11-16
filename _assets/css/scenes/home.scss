@@ -19,6 +19,7 @@
       padding-top: 20px;
       font-size: 16px;
       color: $light;
+      font-family: 'Source Sans Pro', sans-serif;
     }
   }
 
@@ -64,14 +65,15 @@
     }
 
     h3 {
-      padding: 70px 0;
+      padding: 70px 0 30px;
       font-size: 42px;
       font-weight: normal;
     }
 
     p {
-      font-size: 24px;
+      font-size: 21px;
       line-height: 1.6;
+      font-family: 'Source Sans Pro', sans-serif;
 
       &:not(:first-of-type) {
         margin-top: 50px;
@@ -80,8 +82,7 @@
   }
 
   #newsletter {
-    color: $white;
-    background-color: $rocket;
+    color: $default;
 
     .form-default {
       padding-top: 30px;
@@ -90,12 +91,22 @@
       form {
         margin-top: 0;
 
+        p {
+          font-size: 32px;
+          font-family: "PT Sans Narrow";
+          margin-top: 60px;
+          color: #333;
+        }
+
         input {
           background-color: $white;
+          border-color: #ddd;
         }
 
         small {
           margin-top: 10px;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 14px;
         }
       }
     }

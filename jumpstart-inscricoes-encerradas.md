@@ -30,7 +30,7 @@ redirect_from:
 
 <section id="statements">
   <div class="container">
-    <h2>Veja o que estão falando da Rocket<b>Seat</b></h2>
+    <h2>Veja o que estão falando da RocketSeat</h2>
 
     <div>
       <blockquote>

@@ -53,9 +53,10 @@
 
       p {
         padding: 0 21px;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.6;
-        color: $main-color;
+        color: $default;
+        font-family: 'Source Sans Pro', sans-serif;
       }
 
       .social {
