@@ -1,0 +1,341 @@
+.page-workshop-inscricao {
+  $theme: #282B34;
+
+  #primary {
+    position: relative;
+    padding: 100px 0;
+    color: $white;
+    background-color: $theme;
+    z-index: 1;
+    text-align: center;
+    min-height: calc(100vh - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/space-bg.png) #2E2E38 top center no-repeat;
+
+    @media screen and (max-width: 525px) {
+      padding: 50px 0;
+    }
+
+    .container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    .title {
+      padding-bottom: 30px;
+
+      h1 {
+        font-size: 110px;
+
+        @media screen and (max-width: 525px) {
+          font-size: 65px;
+        }
+
+        b {
+          color: $rocket;
+        }
+      }
+
+      p {
+        font-size: 30px;
+        font-weight: bold;
+
+        @media screen and (max-width: 525px) {
+          font-size: 24px;
+        }
+
+      }
+    }
+
+    .content {
+      font-size: 24px;
+      line-height: 1.6;
+      max-width: 600px;
+
+      @media screen and (max-width: 525px) {
+        font-size: 22px;
+      }
+
+      .action {
+        width: 100%;
+        max-width: 500px;
+        padding-top: 50px;
+        font-size: 24px;
+        text-align: center;
+        margin: 0 auto;
+
+        strong {
+          font-size: 32px;
+        }
+
+        a {
+          margin-top: 10px;
+          width: 100%;
+          font-size: 26px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  #secondary {
+    position: relative;
+    padding: 80px 0;
+    color: $white;
+    text-align: center;
+    background: $rocket;
+    z-index: 2;
+    overflow: hidden;
+
+    h2 {
+      font-size: 42px;
+
+      @media screen and (max-width: 450px) {
+        font-size: 30px;
+      }
+    }
+
+    p {
+      font-size: 32px;
+      padding: 50px 0 30px 0;
+      line-height: 1.6;
+
+      @media screen and (max-width: 450px) {
+        font-size: 22px;
+      }
+    }
+
+    a {
+      width: 100%;
+      max-width: 320px;
+      padding: 15px;
+      font-size: 26px;
+    }
+
+    .container {
+      position: relative;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        @extend .icon;
+        color: #E14C4C;
+        font-size: 320px;
+      }
+
+      &:before {
+        content: "\e915";
+        top: 30px;
+        left: 0;
+        transform: translateX(-90%);
+        z-index: 0;
+      }
+
+      &:after {
+        content: "\e914";
+        bottom: -70px;
+        right: 0;
+        transform: translateX(130%);
+        z-index: 0;
+      }
+    }
+  }
+
+  #cases {
+    .content {
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (max-width: 500px) {
+        justify-content: center;
+        flex-direction: column;
+
+        article {
+          width: 100% !important;
+
+          &:not(:first-child) {
+            margin-left: 0!important;
+            margin-top: 30px;
+          }
+
+          h4 {
+            padding: 10px 0 !important;
+          }
+        }
+      }
+
+      article {
+        width: calc(33.33% - 40px);
+
+        @media screen and (max-width: 900px) and (min-width: 501px) {
+          width: calc(33.33% - 20px);
+
+          &:not(:first-child) {
+            margin-left: 10px;
+          }
+        }
+
+        &:not(:first-child) {
+          margin-left: 20px;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 5px;
+        }
+
+        h4 {
+          font-size: 24px;
+          color: $black;
+          margin: 0;
+          padding: 20px 0;
+        }
+
+        p {
+          text-align: justify;
+          line-height: 1.6;
+          font-size: 14px;
+          font-family: Helvetica, Arial, sans-serif;
+
+          &:not(:first-of-type) {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+
+    footer {
+      padding: 100px 0 50px 0;
+      text-align: center;
+
+      @media screen and (max-width: 500px) {
+        padding: 50px 0 0 0;
+      }
+
+      p {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .call-action {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px 0;
+        font-size: 30px;
+
+        @media screen and (max-width: 400px) {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  #footer-container {
+    background: url(../img/space-bg.png) #2E2E38 top center no-repeat;
+
+    #form {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 31px;
+        background: $white;
+      }
+
+      form {
+        @media screen and (max-width: 620px) {
+          h3 {
+            font-size: 36px !important;
+          }
+
+          p {
+            font-size: 20px !important;
+          }
+        }
+
+        h3, p {
+          color: $white;
+        }
+
+        h3 {
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 24px;
+        }
+
+        input {
+          background-color: $white;
+        }
+
+        .call-action {
+          font-size: 30px;
+        }
+      }
+    }
+
+    #main-footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    #main-footer ul li a {
+      color: $white;
+    }
+  }
+
+  &.obrigado {
+    #primary {
+      .content {
+        max-width: 600px !important;
+      }
+    }
+  }
+
+  &.obrigado,
+  &.confirmado {
+    #primary {
+      .title p {
+        font-size: 40px;
+      }
+
+      .content {
+        max-width: 800px;
+
+        p {
+          font-size: 20px;
+        }
+
+        p a {
+          text-decoration: underline;
+
+          &:hover,
+          &:focus {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .social-buttons a {
+      color: $white;
+      margin-top: 15px;
+    }
+
+    #main-footer {
+      margin-top: 0;
+    }
+  }
+}
