@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../img/space-bg.png) #2E2E38 top center no-repeat;
+    background: url(../img/office.jpg) #2E2E38 top center no-repeat;
 
     @media screen and (max-width: 525px) {
       padding: 50px 0;
@@ -25,47 +25,50 @@
       align-items: center;
       justify-content: center;
       z-index: 1;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 25px;
+      margin: 0 10px;
     }
 
     .title {
-      padding-bottom: 30px;
+      padding: 40px 0px 10px;
+      color: $black;
 
       h1 {
-        font-size: 110px;
+        font-size: 60px;
+        max-width: 700px;
 
         @media screen and (max-width: 525px) {
-          font-size: 65px;
-        }
-
-        b {
-          color: $rocket;
+          font-size: 45px;
         }
       }
 
       p {
-        font-size: 30px;
-        font-weight: bold;
+        font-size: 26px;
+        margin-bottom: 10px;
 
         @media screen and (max-width: 525px) {
-          font-size: 24px;
+          font-size: 20px;
         }
-
       }
     }
 
     .content {
       font-size: 24px;
       line-height: 1.6;
-      max-width: 600px;
+      color: $black;
+      padding-bottom: 30px;
 
       @media screen and (max-width: 525px) {
         font-size: 22px;
       }
 
+      h2 {
+        padding: 10px 0;
+      }
+
       .action {
         width: 100%;
-        max-width: 500px;
-        padding-top: 50px;
         font-size: 24px;
         text-align: center;
         margin: 0 auto;
@@ -86,15 +89,15 @@
 
   #secondary {
     position: relative;
-    padding: 80px 0;
     color: $white;
-    text-align: center;
     background: $rocket;
     z-index: 2;
     overflow: hidden;
+    padding: 80px 30px 100px;
 
     h2 {
       font-size: 42px;
+      padding-bottom: 20px;
 
       @media screen and (max-width: 450px) {
         font-size: 30px;
@@ -102,24 +105,18 @@
     }
 
     p {
-      font-size: 32px;
-      padding: 50px 0 30px 0;
-      line-height: 1.6;
+      font-size: 30px;
+      padding-top: 20px;
+      line-height: 1.4;
 
       @media screen and (max-width: 450px) {
         font-size: 22px;
       }
     }
 
-    a {
-      width: 100%;
-      max-width: 320px;
-      padding: 15px;
-      font-size: 26px;
-    }
-
     .container {
       position: relative;
+      max-width: 700px;
 
       &:before,
       &:after {
@@ -135,7 +132,7 @@
         top: 30px;
         left: 0;
         transform: translateX(-90%);
-        z-index: 0;
+        z-index: -1;
       }
 
       &:after {
@@ -143,7 +140,22 @@
         bottom: -70px;
         right: 0;
         transform: translateX(130%);
-        z-index: 0;
+        z-index: -1;
+      }
+    }
+
+    ul {
+      font-size: 30px;
+      list-style: square inside;
+      padding-top: 30px;
+      line-height: 1.4;
+
+      li {
+        margin-bottom: 15px;
+      }
+
+      @media screen and (max-width: 450px) {
+        font-size: 22px;
       }
     }
   }
@@ -337,5 +349,10 @@
     #main-footer {
       margin-top: 0;
     }
+  }
+
+  #profiles .profile span {
+    width: 300px;
+    height: 300px;
   }
 }
