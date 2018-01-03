@@ -154,11 +154,15 @@ window.onhashchange = function() {
 };
 
 // abre modal
-$('.open-modal').on('click', function() {
+$('.open-modal').on('click', function(event) {
+  event.preventDefault();
+
   $('#modal').addClass('active');
 });
 
 // fecha o modal
-$('#close-modal').on('click', function() {
+$('#close-modal').on('click', function(event) {
+  event.preventDefault();
+
   $('#modal').removeClass('active');
 });

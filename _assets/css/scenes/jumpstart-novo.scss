@@ -1,0 +1,668 @@
+.page-jumpstart-novo {
+  h1, h2, h3, h4 {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 300;
+  }
+
+  .call-to-action {
+    display: inline-block;
+    height: 61px;
+    background: #FEA935;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    color: #58420F;
+    font-size: 24px;
+    line-height: 61px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.5s;
+
+    &:hover {
+      background: darken(#FEA935, 10%);
+    }
+
+    &.small {
+      max-width: 350px;
+    }
+
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+  }
+
+  #modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+
+    .modal-content {
+      max-width: 350px;
+      margin: 0 20px;
+      border-radius: 10px;
+      background: #fff;
+      padding: 30px 20px;
+      text-align: center;
+
+      strong {
+        font-size: 32px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 30px;
+        display: block;
+      }
+
+      input {
+        font-family: "Source Sans Pro", Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        height: 51px;
+        line-height: 51px;
+        border: 1px solid #ddd;
+        border-radius: 30px;
+        margin-bottom: 15px;
+        width: 100%;
+        padding: 0 20px;
+      }
+
+      button {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #666;
+        font-weight: 300;
+        margin-top: 10px;
+      }
+
+      a {
+        font-size: 18px;
+        margin-top: 30px;
+        display: block;
+      }
+    }
+  }
+
+  header#jumpstart-header {
+    padding: 80px 0;
+    background: url(../img/jumpstart-novo/header-bg.png) no-repeat center bottom;
+    text-align: center;
+    color: #FFF;
+
+    .content {
+      max-width: 990px;
+      margin: 0 auto;
+      padding: 0 20px;
+
+      h1 {
+        font-size: 58px;
+        margin-top: 50px;
+
+        span {
+          font-weight: 700;
+        }
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-top: 20px;
+        line-height: 38px;
+
+        span {
+          font-weight: 600;
+        }
+
+        a {
+          text-decoration: underline;
+
+          &:hover {
+            color: #FFF;
+          }
+        }
+      }
+
+      @media (max-width: 550px) {
+        h1 { font-size: 38px; }
+      }
+    }
+  }
+
+  section {
+    margin-top: 80px;
+
+    div.content {
+      max-width: 1130px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+
+    &.main-section div.content {
+      border-top: 1px solid #EEE;
+      padding-top: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-size: 36px;
+        font-weight: 300;
+        color: #333;
+        margin-bottom: 80px;
+        text-align: center;
+        line-height: 48px;
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  section#content {
+
+    div.content {
+      > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+          margin: 0 50px 0 0;
+
+          @media (max-width: 700px) {
+            display: none;
+          }
+        }
+
+        &:first-child {
+          margin-bottom: 40px;
+
+          img {
+            margin: 0 0 0 50px;
+          }
+        }
+
+        p {
+          flex: 1;
+          font-size: 19px;
+          line-height: 34px;
+          color: #444;
+        }
+      }
+    }
+  }
+
+  section#cycle {
+
+    .cycle-content {
+      margin: 0 30px;
+      width: 100%;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: url(../img/jumpstart-novo/ciclo-jumpstart.svg) no-repeat center;
+
+      @media (max-width: 1020px) {
+        background-size: 150px;
+      }
+
+      @media (max-width: 900px) {
+        background: none;
+        height: auto;
+      }
+
+      .cycle-line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 900px) {
+          flex-direction: column;
+
+          .cycle-box {
+            width: auto !important;
+            max-width: 600px;
+            margin-bottom: 30px;
+            text-align: left !important;
+          }
+        }
+
+        .cycle-box {
+          width: 350px;
+
+          &:first-child {
+            text-align: right;
+          }
+
+          strong {
+            font-size: 24px;
+            color: #333;
+            font-weight: 600;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 32px;
+            font-weight: 500;
+            color: #666;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  section#subjects {
+    .subjects-content {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: center;
+
+      @media (max-width: 1032px) {
+        flex-direction: column;
+      }
+
+      .separator {
+        margin: 0 50px;
+
+        @media (max-width: 1032px) {
+          display: none;
+        }
+      }
+
+      ul {
+        flex: 1;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        &:first-child {
+          text-align: right;
+        }
+
+        @media (max-width: 1032px) {
+          text-align: left !important;
+          list-style: circle;
+          margin-left: 30px;
+        }
+
+        li {
+          font-size: 21px;
+          color: #444;
+          line-height: 50px;
+
+          @media (max-width: 1160px) {
+            font-size: 18px;
+            line-height: 42px;
+          }
+
+          @media (max-width: 1032px) {
+            font-size: 18px;
+            line-height: 36px;
+          }
+        }
+      }
+    }
+  }
+
+  section#stages {
+    .stages-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .stage-box {
+        width: calc(50% - 25px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 50px;
+
+        @media (max-width: 796px) {
+          width: 100%;
+        }
+
+        img {
+          margin: 0 40px 0 0;
+
+          @media (max-width: 1166px) {
+            display: none;
+          }
+        }
+
+        &:nth-child(2n) {
+          img {
+            order: 2;
+            margin: 0 0 0 40px;
+          }
+        }
+
+        strong {
+          font-size: 24px;
+          color: #333;
+          font-weight: 600;
+
+          @media (max-width: 400px) {
+            font-size: 20px
+          }
+        }
+
+        &.in-jumpstart strong {
+          padding-right: 95px;
+          background: url(../img/jumpstart-novo/in-jumpstart.svg) no-repeat center right;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 32px;
+          color: #666;
+          margin-top: 10px;
+        }
+
+        &:last-child {
+          width: 100%;
+          flex-direction: column;
+          text-align: center;
+          margin: 0;
+
+          background: url(../img/jumpstart-novo/arrow_left_2.svg) no-repeat left center,
+            url(../img/jumpstart-novo/arrow_right_2.svg) no-repeat right center;
+
+          @media (max-width: 796px) {
+            background: none;
+            text-align: left;
+
+            strong, p {
+              max-width: 100% !important;
+            }
+          }
+
+          img {
+            margin: 0 0 30px 0;
+          }
+
+          strong, p {
+            max-width: 350px;
+          }
+        }
+      }
+    }
+  }
+
+  section#pilots {
+    .pilots-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      @media (max-width: 1050px) {
+        flex-direction: column;
+
+        .pilot-box {
+          margin: 0 !important;
+
+          &:first-child {
+            margin-bottom: 50px !important;
+          }
+        }
+      }
+
+      .pilot-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+
+        @media (max-width: 600px) {
+          flex-direction: column;
+          text-align: center;
+
+          > img {
+            margin: 0 0 30px 0 !important;
+          }
+        }
+
+        &:first-child {
+          margin-right: 15px;
+        }
+
+        &:last-child {
+          margin-right: 15px;
+        }
+
+        > img {
+          margin-right: 30px;
+        }
+
+        div > strong {
+          font-size: 24px;
+          color: #333;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 32px;
+          color: #666;
+          margin-top: 10px;
+          font-weight: 300;
+
+          strong {
+            font-weight: 600;
+          }
+        }
+
+        .social {
+          margin-top: 10px;
+
+          a {
+            display: inline-block;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  section#features {
+    .features-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      @media (max-width: 615px) {
+        flex-direction: column;
+
+        .feature-box {
+          margin: 0 !important;
+
+          &:first-child {
+            margin: 0 0 50px 0 !important;
+          }
+        }
+      }
+
+      .feature-box {
+        max-width: 400px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &:first-child {
+          margin-right: 25px;
+        }
+
+        &:last-child {
+          margin-right: 25px;
+        }
+
+        > strong {
+          font-size: 24px;
+          color: #333;
+          font-weight: 600;
+          margin: 30px 0 10px 0;
+        }
+
+        p {
+          font-size: 18px;
+          color: #444;
+          line-height: 32px;
+          font-weight: 300;
+
+          strong {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  section#faq-new {
+    text-align: left;
+
+    h4 {
+      font-size: 24px;
+      color: #333333;
+      font-weight: 600;
+      align-self: flex-start;
+    }
+
+    p {
+      margin-top: 10px;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 32px;
+      text-align: left;
+      align-self: flex-start;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  section#guarantee {
+    .guarantee-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      max-width: 800px;
+
+      @media (max-width: 600px) {
+        flex-direction: column;
+
+        p {
+          margin: 30px 0 0 0 !important;
+          text-align: center;
+        }
+      }
+
+      p {
+        margin-top: 10px;
+        margin-left: 50px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+
+        strong {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  section#price {
+    margin-bottom: 80px;
+    text-align: center;
+
+    h4 {
+      font-size: 24px;
+      color: #444;
+      font-weight: 300;
+      margin-bottom: 20px;
+      line-height: 38px;
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    .old-price {
+      margin-top: 30px;
+      color: #999;
+      font-size: 24px;
+      font-weight: 300;
+
+      strong {
+        font-weight: 600;
+        text-decoration: line-through;
+      }
+    }
+
+    .special-price {
+      text-align: center;
+      width: 100%;
+      max-width: 850px;
+      margin-top: 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: url(../img/jumpstart-novo/arrow_left_2.svg) no-repeat left center,
+        url(../img/jumpstart-novo/arrow_right_2.svg) no-repeat right center;
+
+      @media (max-width: 880px) {
+        background: none;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 600;
+        color: #444;
+      }
+
+      strong {
+        font-size: 72px;
+        font-weight: 700;
+        color: #444;
+        margin: 5px 0;
+      }
+
+      span {
+        font-size: 16px;
+        color: #999;
+        font-weight: 500;
+      }
+    }
+  }
+}
+

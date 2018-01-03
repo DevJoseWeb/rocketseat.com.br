@@ -4,7 +4,6 @@ description: Jumpstart - As inscrições estão encerradas encerradas, quer entr
 layout: blank
 class: page-jumpstart-fila
 redirect_from:
-  - /jumpstart
   - /rocketweek
   - /rocketweek-inscricao
 ---
