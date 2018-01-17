@@ -2,19 +2,5 @@ User-agent: *
 
 Allow: /
 Disallow: /404
-Disallow: /ebook-7-passos-confirmado
-Disallow: /ebook-da-ideia-a-startup-confirmado
-
-Disallow: /inscricao-confirmada
-Disallow: /inscricao-enviada
-Disallow: /jumpstart
-Disallow: /jumpstart-obrigado
-Disallow: /jumpstart-erro
-Disallow: /rocketweek
-Disallow: /rocketweek-inscricao
-Disallow: /rocketweek-confirmada
-Disallow: /workshop-inscricao
-Disallow: /workshop-confirmado
-Disallow: /workshop-obrigado
 
 Sitemap: http://rocketseat.com.br/sitemap.xml

@@ -52,7 +52,7 @@ input {
 }
 
 ::selection {
-  background: #292B37;
+  background: #463377;
   color: $white;
   text-shadow: none;
 }
@@ -71,7 +71,6 @@ a {
 
 a:focus,
 a:hover {
-  color: $black;
   text-decoration: underline;
   outline: none;
 }
@@ -96,5 +95,18 @@ textarea {
 
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
-  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.social a {
+  padding-left: 20px;
+  font-size: 20px;
+
+  &:hover {
+    color: #6ADC00;
+    text-decoration: none;
+  }
+
+  &:first-child {
+    padding: 0;
+  }
 }

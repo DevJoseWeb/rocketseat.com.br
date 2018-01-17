@@ -1,34 +1,94 @@
 ---
-layout: default
+layout: blank
 class: home
 ---
 
-<div id="page-home">
-  <section id="primary">
-    <h2>Uma comunidade incrível de programadores <br/>dispostos a mudar o mundo</h2>
-  </section>
+<div class="wrapper">
+  <div class="content">
+    <header>
+      <div class="logo-community">
+        <h1>
+          <img src="{{ 'logo.svg' | asset_path }}" alt="Rocketseat" />
+        </h1>
+        <a target="_blank" href="http://comunidade.rocketseat.com.br">
+          <img src="{{ 'discord.svg' | asset_path }}" alt="Comunidade" /><span>Comunidade</span>
+        </a>
+      </div>
 
-  <section id="main-content">
-    <div class="container">
-      <h3>A <strong>RocketSeat</strong> é uma startup criada para educar, inspirar e conectar programadores empreendedores</h3>
+      {% include social.html %}
+    </header>
 
-      <p>Nós oferecemos através de <strong>cursos, eventos, conteúdo e comunidade</strong>, as ferramentas necessárias para que você possa construir coisas extraordinárias e ser o protagonista da mudança nesse cenário de tecnologia e inovação. E acreditamos que essas ferramentas estão divididas em 3 pilares: <strong>programação, empreendedorismo e mindset</strong>. Ou seja, o conhecimento técnico, o conhecimento de negócios e o autoconhecimento.</p>
+    <h2>
+      Uma startup criada para <span>educar, inspirar e conectar</span> programadores e empreendedores.
+    </h2>
+
+    <footer>
+      <div class="newsletter">
+        <strong>Fique por dentro de tudo que acontece</strong>
+        <form action="http://hike.rocketseat.com.br/api/subscriptions" method="POST">
+          <input type="hidden" name="data[list_id]" value="10fb5e3e-2987-4c80-ae31-174e7b7c7cf9">
+          <input type="hidden" name="data[redirect_url]" value="http://rocketseat.com.br/newsletter-sucesso.html">
+          <input placeholder="Deixe seu melhor e-mail" name="data[email]" type="email" required />
+          <button type="submit"><i class="fa fa-check"></i></button>
+        </form>
+      </div>
+      <div class="caption">
+        <p>“Quando te oferecem um assento em um foguete, você não pergunta qual assento. Você simplesmente embarca.”</p>
+        <span>Eric Schmidt, Google</span>
+      </div>
+    </footer>
+  </div>
+  <div class="pilots">
+    <div class="pilot">
+      <div class="info">
+        <h3>Cleiton Souza</h3>
+        <p>
+          <strong>Head de Mindset.</strong> Apaixonado por gamificação e produtividade, em busca do constante estado de flow.
+        </p>
+        <div class="links">
+          <a target="_blank" href="http://twitter.com/cleitonlsouza">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="picture">
+        <img src="{{ 'home/cleiton.png' | asset_path }}" title="Cleiton Souza" />
+      </div>
     </div>
-  </section>
-
-  {% include pilots.html %}
-
-  <section id="newsletter">
-    <div class="form-default">
-      <form action="http://hike.rocketseat.com.br/api/subscriptions" method="POST">
-        <p>Quer ficar por dentro de tudo o que acontece na <strong>RocketSeat</strong>?</p>
-        <input placeholder="Deixe seu melhor e-mail" name="data[email]" type="email" required>
-        <input type="hidden" name="data[list_id]" value="10fb5e3e-2987-4c80-ae31-174e7b7c7cf9">
-        <input type="hidden" name="data[redirect_url]" value="http://rocketseat.com.br/inscricao-enviada.html">
-        <input type="hidden" name="data[confirm_redirect_url]" value="http://rocketseat.com.br/inscricao-confirmada.html">
-        <button class="call-action" type="submit">Receber novidades!</button>
-        <small>PS: Também não gostamos de spam ;)</small>
-      </form>
+    <div class="pilot">
+      <div class="info">
+        <h3>Diego Fernandes</h3>
+        <p>
+          <strong>Head de Programação</strong>. Apaixonado por Javascript e pelo ecossistema React/React Native.
+        </p>
+        <div class="links">
+          <a target="_blank" href="http://twitter.com/dieegosf">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a target="_blank" href="http://github.com/diego3g">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <div class="picture">
+        <img src="{{ 'home/diego.png' | asset_path }}" title="Diego Fernandes" />
+      </div>
     </div>
-  </section>
+    <div class="pilot">
+      <div class="info">
+        <h3>Robson Marques</h3>
+        <p>
+          <strong>Head de Empreendedorismo</strong>. Apaixonado por growth, startups enxutas e ideias de negócio.
+        </p>
+        <div class="links">
+          <a target="_blank" href="http://twitter.com/robsonmarques">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="picture">
+        <img src="{{ 'home/robson.png' | asset_path }}" title="Diego Fernandes" />
+      </div>
+    </div>
+  </div>
 </div>
