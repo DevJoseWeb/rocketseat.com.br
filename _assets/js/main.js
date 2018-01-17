@@ -93,66 +93,66 @@ $('*[data-query]').each(function() {
   }
 });
 
-/**
- * Videos RocketWeek
- */
-var videoPrefix = 'https://www.youtube.com/embed/';
-var videoSufix = '?rel=0&amp;showinfo=0';
-var scrollPosition = 0;
+// /**
+//  * Videos RocketWeek
+//  */
+// var videoPrefix = 'https://www.youtube.com/embed/';
+// var videoSufix = '?rel=0&amp;showinfo=0';
+// var scrollPosition = 0;
 
-// Verifica o hash e dispara um trigger no box do video
-$(document).ready(function() {
-  if ($('body').hasClass('page-rocketweek-videos')) {
-    var hash = window.location.hash;
+// // Verifica o hash e dispara um trigger no box do video
+// $(document).ready(function() {
+//   if ($('body').hasClass('page-rocketweek-videos')) {
+//     var hash = window.location.hash;
 
-    var obj = $(hash);
-    if (typeof obj.attr('disabled') == 'undefined') {
-      obj.trigger('click');
-    } else {
-      window.location.hash = $('#video-box .box.active').attr('id');
-    }
-  }
-});
+//     var obj = $(hash);
+//     if (typeof obj.attr('disabled') == 'undefined') {
+//       obj.trigger('click');
+//     } else {
+//       window.location.hash = $('#video-box .box.active').attr('id');
+//     }
+//   }
+// });
 
-// Troca o url do iframe do video pelo data-id e altera o location.hash
-function accessVideo(obj) {
-  if (!obj.hasClass('box')) {
-    obj = obj.closest('.box');
-  }
+// // Troca o url do iframe do video pelo data-id e altera o location.hash
+// function accessVideo(obj) {
+//   if (!obj.hasClass('box')) {
+//     obj = obj.closest('.box');
+//   }
 
-  if (typeof obj.attr('disabled') == 'undefined') {
-    $('#video-box iframe').attr('src', videoPrefix + obj.data('id') + videoSufix);
+//   if (typeof obj.attr('disabled') == 'undefined') {
+//     $('#video-box iframe').attr('src', videoPrefix + obj.data('id') + videoSufix);
 
-    $('#video-box .box.active').removeClass('active');
-    obj.addClass('active');
+//     $('#video-box .box.active').removeClass('active');
+//     obj.addClass('active');
 
-    scrollPosition = $(document).scrollTop();
-    window.location.hash = obj.attr('id');
-  }
-}
+//     scrollPosition = $(document).scrollTop();
+//     window.location.hash = obj.attr('id');
+//   }
+// }
 
-// Dispara um trigger no box do video quando da enter
-$('#video-box .box').on('keypress', function(event) {
-  event.preventDefault();
+// // Dispara um trigger no box do video quando da enter
+// $('#video-box .box').on('keypress', function(event) {
+//   event.preventDefault();
 
-  if (event.keyCode == 13 || event.key.toLowerCase() == 'enter') {
-    accessVideo($(event.target));
-  }
-});
+//   if (event.keyCode == 13 || event.key.toLowerCase() == 'enter') {
+//     accessVideo($(event.target));
+//   }
+// });
 
-// Dispara um trigger no box do video quando clica
-$('#video-box .box').on('click', function(event) {
-  event.preventDefault();
+// // Dispara um trigger no box do video quando clica
+// $('#video-box .box').on('click', function(event) {
+//   event.preventDefault();
 
-  accessVideo($(event.target));
-});
+//   accessVideo($(event.target));
+// });
 
-// Previne o "jump" quando altera o hash
-window.onhashchange = function() {
-  setTimeout(function() {
-    window.scrollTo(0, scrollPosition);
-  }, 1);
-};
+// // Previne o "jump" quando altera o hash
+// window.onhashchange = function() {
+//   setTimeout(function() {
+//     window.scrollTo(0, scrollPosition);
+//   }, 1);
+// };
 
 // abre modal
 $('.open-modal').on('click', function(event) {
