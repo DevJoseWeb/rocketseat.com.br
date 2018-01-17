@@ -52,6 +52,7 @@ gems:
     - jekyll-sitemap
     - jekyll-feed
     - jekyll-redirect-from
+    - jekyll-font-awesome-sass
 
 exclude:
     - Gemfile

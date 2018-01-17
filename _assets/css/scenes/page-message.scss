@@ -1,0 +1,35 @@
+.page-message {
+  .wrapper {
+    background-color: #6C4FBB;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .content {
+      max-width: 600px;
+      text-align: center;
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 32px;
+
+        a {
+          text-decoration: underline;
+        }
+      }
+
+      > a {
+        display: block;
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}

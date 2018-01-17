@@ -1,3 +1,6 @@
+$fa-font-path: "fonts/font-awesome/";
+@import 'font-awesome';
+
 @import
   'vars',
   'mixins'
@@ -23,5 +26,6 @@
   'scenes/home',
   'scenes/jumpstart-novo',
   'scenes/startup-canvas-inscricao',
-  'scenes/startup-canvas-videos'
+  'scenes/startup-canvas-videos',
+  'scenes/page-message'
 ;
