@@ -1,7 +1,6 @@
 @import
   'vars',
-  'mixins',
-  'animations'
+  'mixins'
 ;
 
 @import
@@ -10,39 +9,18 @@
 
 @import
   'layouts/default',
-  'layouts/ebook',
-  'layouts/page',
-  'layouts/simple'
+  'layouts/page'
 ;
 
 @import
   'partials/defaults',
-  'partials/globals',
-  'partials/utils',
-  'partials/custom-fonts',
-  'partials/header',
   'partials/footer',
-  'partials/social-buttons',
-  'partials/subscriptions-out',
-  'partials/pilots',
-  'partials/form-default',
-  'partials/faq',
-  'partials/custom-radio'
+  'partials/header'
 ;
 
 @import
   'scenes/404',
   'scenes/home',
-  'scenes/jumpstart',
-  'scenes/jumpstart-fila',
-  'scenes/slack',
-  'scenes/ebook-7-passos',
-  'scenes/ebook-da-ideia-a-startup',
-  'scenes/inscricao-confirmada',
-  'scenes/rocketweek',
-  'scenes/rocketweek-videos',
-  'scenes/questionario',
-  'scenes/workshop-inscricao',
   'scenes/jumpstart-novo',
   'scenes/startup-canvas-inscricao',
   'scenes/startup-canvas-videos'

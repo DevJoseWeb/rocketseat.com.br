@@ -1,7 +1,7 @@
 name: RocketSeat
-title: Tire sua ideia do papel e dê vida à sua própria startup
+title: Uma startup criada para educar, inspirar e conectar programadores e empreendedores.
 email: oi@rocketseat.com.br
-description: Tire sua ideia do papel e dê vida à sua própria startup
+description: Cursos, eventos, conteúdo e comunidade, as ferramentas necessárias para que você possa construir coisas extraordinárias e ser o protagonista da mudança nesse cenário de tecnologia e inovação.
 baseurl: ""
 url: "http://rocketseat.com.br"
 timezone: America/Sao_Paulo
@@ -45,12 +45,6 @@ markdown: kramdown
 # Pagination
 paginate: 12
 paginate_path: "/blog/:num/"
-
-# Collection
-collections:
-    ebooks:
-        output: true
-        permalink: /:title.html
 
 gems:
     - jekyll-paginate
