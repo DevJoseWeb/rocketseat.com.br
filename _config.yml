@@ -30,7 +30,10 @@ assets:
         - "*.png"
         - "*.svg"
         - "*.ttf"
+        - "*.eot"
+        - "*.otf"
         - "*.woff"
+        - "*.woff2"
 
     sources:
         - _assets
@@ -52,7 +55,6 @@ gems:
     - jekyll-sitemap
     - jekyll-feed
     - jekyll-redirect-from
-    - jekyll-font-awesome-sass
 
 exclude:
     - Gemfile

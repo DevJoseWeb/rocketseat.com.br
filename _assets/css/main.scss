@@ -1,6 +1,3 @@
-$fa-font-path: "fonts/font-awesome/";
-@import 'font-awesome';
-
 @import
   'vars',
   'mixins'
@@ -29,3 +26,5 @@ $fa-font-path: "fonts/font-awesome/";
   'scenes/startup-canvas-videos',
   'scenes/page-message'
 ;
+
+@import 'font-awesome/font-awesome';
