@@ -197,7 +197,7 @@
         .info {
           text-align: right;
           flex: 1;
-          margin-right: 40px;
+          margin-right: 20px;
 
           @media (max-width: 700px) {
             margin: 30px 0 0;
@@ -237,8 +237,12 @@
         }
 
         .picture {
-          width: 180px;
+          width: 200px;
           text-align: center;
+
+          img {
+            max-width: 100%;
+          }
         }
       }
     }
